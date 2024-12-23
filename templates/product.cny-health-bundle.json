@@ -310,7 +310,7 @@
       ],
       "custom_css": [
         ".accordion__heading:first-child {text-align: center;}",
-        ".accordion {color: black; background-color: white; border-radius: 15px; padding-left: 10px; padding-right: 10px; border: 1.5px solid #ebb240; margin-bottom: 25px;}",
+        ".accordion {color: black; background-color: white; border-radius: 15px; border: 1.5px solid #ebb240; margin-bottom: 25px;}",
         ".accordion-group {background: rgb(0, 68, 21); background: linear-gradient( 121deg, rgb(174, 56, 53) 33%, rgb(126, 22, 21) 90% );}"
       ],
       "settings": {
