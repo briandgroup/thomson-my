@@ -244,7 +244,7 @@
                 {%- assign images = product.media | where: 'media_type', 'image' -%}
 
                 {%- for image in images -%}
-                  {%- render 'image', 
+                  {%- render 'image',
                     image: image,
                     width: 160,
                     height: 160,
@@ -2729,8 +2729,8 @@
           "label": "Text alignment",
           "default": "text-center",
           "options": [
-            { "value": "text-left","label": "Left" },
-            { "value": "text-center","label": "Centered" }
+            { "value": "text-left", "label": "Left" },
+            { "value": "text-center", "label": "Centered" }
           ]
         },
         {
