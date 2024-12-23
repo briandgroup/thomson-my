@@ -1,0 +1,51 @@
+.faq-tdg-accordion {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.faq-tdg-entry {
+  background: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.tdg-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: background-color 0.4s ease;
+}
+
+.active, .tdg-accordion:hover {
+  background-color: #ccc;
+}
+
+.tdg-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.show-more {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

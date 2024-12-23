@@ -1,0 +1,976 @@
+{%- liquid
+  assign animation_name = 'cart-items-fade'
+  assign animation_duration = 500
+  assign animation_delay_initial = 200
+  assign animation_delay_increment = 50
+  assign block_index_pinned = 1
+  assign block_index_static = 1
+  assign is_cart_drawer = true
+  assign cart_item_count = cart.item_count
+  assign cart_title_default = 'cart.general.title' | t
+  assign show_empty_cart_menu = settings.show_empty_cart_menu | default: nil
+  assign empty_cart_menu = settings.empty_cart_menu
+  assign empty_cart_products = settings.empty_cart_products | default: nil
+  assign show_wheel = false
+  assign show_progress_bar = true
+  assign has_cart_title = false
+  assign has_checkout_buttons = false
+
+  assign title_block = section.blocks | where: "type", "title"
+  assign product_block = section.blocks | where: "type", "products"
+  assign checkout_buttons_block = section.blocks | where: "type", "checkout-buttons"
+
+  for block in section.blocks
+    case block.type
+      when 'title'
+        assign has_cart_title = true
+        assign title_block_index = forloop.index
+
+      when 'products'
+        assign products_block_index = forloop.index
+
+      when 'checkout-buttons'
+        assign has_checkout_buttons = true
+
+    endcase
+  endfor
+-%}
+
+{%- capture cart_title -%}
+  <h3 class="cart__title caps">
+    {{ title_block[0].settings.title | default: cart_title_default }}
+
+    <cart-count class="cart__items-count" data-cart-count="{{ cart_item_count }}">{{ cart_item_count }}</cart-count>
+  </h3>
+
+  <button type="button" class="drawer__close" data-cart-drawer-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
+    {%- render 'icon-cancel' -%}
+  </button>
+{%- endcapture -%}
+
+{%- capture cart_items -%}
+  {%- assign animation_delay = products_block_index | times: animation_delay_increment | plus: animation_delay_initial -%}
+
+  <div class="cart-block" {{ block.shopify_attributes }}>
+    <div class="cart__errors drawer__errors"
+      data-cart-errors
+      data-animation="{{ animation_name }}"
+      data-animation-duration="{{ animation_duration }}"
+      data-animation-delay="{{ animation_delay }}">
+      <div class="cart__errors__inner">
+        <h5 class="cart__errors__heading">{{ 'cart.general.limit_message' | t }}</h5>
+
+        <p class="cart__errors__content" data-error-message></p>
+
+        <button class="cart__errors__close" type="button" data-cart-error-close aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
+          {%- render 'icon-cancel' -%}
+        </button>
+      </div>
+    </div>
+
+    <div class="drawer__items-title">{{ 'cart.general.products_with_count' | t: count: cart.item_count  }}</div>
+
+    <cart-items class="drawer__items" data-items-holder style="--base-animation-delay: {{ animation_delay }}ms">
+      {%- render 'cart-line-items', part: 'line-items' -%}
+    </cart-items>
+  </div>
+{%- endcapture -%}
+
+{%- capture checkout_buttons -%}
+  {%- assign animation_delay = buttons_block_index | times: animation_delay_increment | plus: animation_delay_initial -%}
+  <form id="cartForm" class="cart__form" action="{{ routes.cart_url }}" method="post" novalidate data-cart-form>
+
+    <div class="cart__foot__inner">
+
+      <div class="cart__price__holder" data-cart-price-holder>
+        {%- liquid
+  assign subtotal = cart.total_price | plus: 0
+  assign cart_discount_size = cart.cart_level_discount_applications.size
+  assign original_subtotal = cart.original_total_price | plus: 0
+  assign currency_code_enable = settings.currency_code_enable
+
+  if currency_code_enable
+    assign original_subtotal_formatted = original_subtotal | money_with_currency
+  else
+    assign original_subtotal_formatted = original_subtotal | money
+  endif
+
+  if original_subtotal < subtotal or cart_discount_size == 0
+    assign cart_total_hidden = true
+  endif
+
+  if cart_discount_size == 0
+    assign cart_total_discount_hidden = true
+  endif
+-%}
+
+{%- unless cart_total_hidden -%}
+  <div class="cart__total">
+    <span class="cart__total__label">{{ 'cart.general.subtotal_items' | t }}</span>
+
+    <span class="cart__total__price">
+      {%- if original_subtotal == 0 -%}
+        {{ 'general.money.free' | t }}
+      {%- else -%}
+        {{- original_subtotal_formatted -}}
+      {%- endif -%}
+    </span>
+  </div>
+{%- endunless -%}
+
+{%- unless cart_total_discount_hidden -%}
+  <div class="cart__total__discount">
+    {%- if cart.cart_level_discount_applications.size > 0 -%}
+      {%- for discount in cart.cart_level_discount_applications -%}
+        {%- liquid
+          if currency_code_enable
+            assign discount_total_allocated_amount = discount.total_allocated_amount | money_with_currency
+          else
+            assign discount_total_allocated_amount = discount.total_allocated_amount | money
+          endif
+        -%}
+
+        <div class="cart__total">
+          <div>
+            {%- render 'icon-tags' -%}
+
+            <span>
+              {{- discount.title -}}
+            </span>
+          </div>
+
+          <span>
+            -{{- discount_total_allocated_amount -}}
+          </span>
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+{%- endunless -%}
+
+<div class="cart__total">
+  <span class="cart__total__label">{{- 'cart.general.subtotal' | t -}}</span>
+
+  <span class="cart__total__price cart__total__price--animated" data-cart-total="{{ subtotal }}">
+    {%- if subtotal == 0 -%}
+      {{ 'general.money.free' | t }}
+    {%- else -%}
+      {{- subtotal | money_with_currency -}}
+    {%- endif -%}
+  </span>
+
+  <div class="cart__price__loader loader"><div class="loader-indeterminate"></div></div>
+</div>
+      </div>
+
+      <div class="cart__buttons-all">
+
+        <div class="cart__buttons-wrapper">
+          {%- if settings.enable_accept_terms -%}
+            <input type="hidden" name="attributes[{{ 'cart.general.accepted_terms' | t }}]" value="Yes"/>
+            <input type="checkbox" class="cart__acceptance__input" name="acceptance" id="acceptance" data-cart-acceptance-checkbox>
+            <label for="acceptance" class="cart__acceptance__label" data-cart-acceptance-label>{{ settings.accept_terms_text }}</label>
+
+            <p class="cart__terms cart__errors__content" data-terms-error-message></p>
+          {%- endif -%}
+
+          <div class="cart__buttons{% if settings.enable_accept_terms %} cart__buttons--disabled{% endif %}" data-cart-checkout-buttons>
+            <fieldset class="cart__buttons__fieldset" data-cart-checkout-button>
+              <button type="submit" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
+                {%- if settings.show_lock_icon -%}
+                  {%- render 'animated-icon', filename: 'icon-lock' -%}
+                {%- endif -%}
+
+                {{- 'cart.general.checkout' | t -}}
+              </button>
+               
+               <a href="/collections/all" title="Continue shopping" class="btn btn--full btn--primary btn--solid">
+                Continue shopping
+              </a>
+             
+              <br/>
+              <br/>
+
+              {%- if checkout_buttons_block[0].settings.enable_additional_buttons and additional_checkout_buttons -%}
+                <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
+                  {{- content_for_additional_checkout_buttons -}}
+                </div>
+              {%- endif -%}
+            </fieldset>
+          </div>
+        </div>
+
+        {%- if checkout_buttons_block[0].settings.show_view_cart_button -%}
+          <a href="{{ routes.cart_url }}" class="cart__view btn btn--primary btn--outline">{{- 'cart.general.view_cart' | t -}}</a>
+        {%- endif -%}
+      </div>
+  <br/>
+     <div style="text-align:center">
+    <ul class="supporting-menu__payment payment-icons inline-list" style="display: flex; justify-content: center; list-style-type: none; padding: 0;">
+   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+<path fill="#1565C0" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"></path><path fill="#FFF" d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z"></path><path fill="#FFC107" d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z"></path>
+</svg></li>     
+
+<li>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+<path fill="#3F51B5" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"></path><path fill="#FFC107" d="M30 14A10 10 0 1 0 30 34A10 10 0 1 0 30 14Z"></path><path fill="#FF3D00" d="M22.014,30c-0.464-0.617-0.863-1.284-1.176-2h5.325c0.278-0.636,0.496-1.304,0.637-2h-6.598C20.07,25.354,20,24.686,20,24h7c0-0.686-0.07-1.354-0.201-2h-6.598c0.142-0.696,0.359-1.364,0.637-2h5.325c-0.313-0.716-0.711-1.383-1.176-2h-2.973c0.437-0.58,0.93-1.122,1.481-1.595C21.747,14.909,19.481,14,17,14c-5.523,0-10,4.477-10,10s4.477,10,10,10c3.269,0,6.162-1.575,7.986-4H22.014z"></path>
+</svg>
+</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+<linearGradient id="Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1" x1="2.234" x2="13.54" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1)" d="M10,9h11.585c1.617,0,2.623,1.362,2.246,3.039l-5.394,23.927 c-0.381,1.671-2,3.034-3.618,3.034H3.235c-1.369-0.001-2.302-0.98-2.325-2.296c-0.004-0.237,0.021-0.484,0.079-0.739l5.396-23.927 C6.762,10.362,8.381,9,10,9"></path><linearGradient id="Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2" x1="13.128" x2="26.645" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0077d2"></stop><stop offset="1" stop-color="#0b59a2"></stop></linearGradient><path fill="url(#Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2)" d="M20.5,9h13.47c1.657,0,0.91,1.362,0.52,3.039l-5.527,23.928 C28.575,37.637,28.696,39,27.035,39H13.38c-1.39,0-2.336-0.955-2.379-2.246c-0.008-0.251,0.018-0.516,0.081-0.788l5.711-23.928 C17.187,10.362,18.657,9,20.316,9"></path><linearGradient id="Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3" x1="24" x2="47" y1="24" y2="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#37c6d0"></stop><stop offset="1" stop-color="#1a9ba1"></stop></linearGradient><path fill="url(#Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3)" d="M33.273,9h11.401c1.183,0,2.039,0.727,2.266,1.773c0.044,0.204,0.064,0.42,0.059,0.645 c-0.005,0.2-0.031,0.408-0.079,0.62l-5.393,23.928C41.146,37.637,39.525,39,37.906,39h-11.58c-1.355,0-2.279-0.953-2.324-2.241 c-0.009-0.253,0.016-0.518,0.078-0.792l5.578-23.928C30.036,10.362,31.653,9,33.273,9z"></path><path fill="#fefefe" d="M19.364,18.117c-0.325-0.195-0.905-0.134-1.302,0.135c-0.396,0.263-0.45,0.636-0.126,0.833	c0.319,0.189,0.902,0.134,1.296-0.137C19.626,18.68,19.685,18.31,19.364,18.117z M42.308,19.376l-1.171,2.048L40.874,19l-1.24,0.294	l0.454,3.963l-1.415,2.293c-0.038,0.054-0.072,0.091-0.119,0.107c-0.052,0.025-0.118,0.03-0.21,0.03h-0.04L38,26.624l0.75,0.001	c0.53-0.002,0.904-0.288,1.092-0.625L44,19L42.308,19.376z M22.157,25l-0.404,0.701C21.666,25.854,21.518,26,21.19,26h-0.201	l-0.282,0.875h0.668c0.787,0,1.158-0.431,1.158-0.431h2.086l0.301-0.933h-1.752l0.28-0.51L22.157,25z M10.416,19.885	c-0.194,0.75-0.341,1.24-0.679,1.585c-0.233,0.238-0.593,0.351-0.923,0.35c-0.493,0-0.91-0.311-0.883-0.823	c0.002-0.038,0.007-0.078,0.014-0.119C8.187,19.531,9.242,16,9.242,16H7.275l-1.02,4.03c0,0-0.25,0.968-0.255,1.379	c-0.004,0.313,0.047,0.569,0.164,0.785C6.54,22.879,7.652,23,8.288,23c1.088,0,1.731-0.104,2.257-0.424	c0.839-0.51,1.082-1.2,1.341-2.175C12.178,19.305,13,16,13,16h-1.595C11.405,16,10.417,19.883,10.416,19.885z M13.701,23	l0.705-2.869C14.559,20.065,14.709,20,14.851,20c0.338,0,0.414,0.281,0.397,0.393C15.234,20.529,14.658,23,14.658,23h1.404	l0.491-2.068c0.204-0.764,0.307-1.152,0.177-1.468C16.594,19.111,16.246,19,15.924,19c-0.21,0-0.596,0.073-0.946,0.234	c-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L12.25,23H13.701z M25.576,23l0.705-2.869	C26.434,20.065,26.584,20,26.726,20c0.338,0,0.414,0.281,0.397,0.393C27.109,20.529,26.533,23,26.533,23h1.404l0.491-2.068	c0.204-0.764,0.307-1.152,0.177-1.468C28.469,19.111,28.121,19,27.799,19c-0.21,0-0.596,0.073-0.946,0.234	c-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L24.125,23H25.576z M17,23h1.451l0.75-3l-1.486,0.22L17,23z M35.424,16.62c-0.414-0.603-1.269-0.615-2.257-0.62c-0.001,0-0.727,0-0.727,0h-1.614L29,23h1.579l0.665-2.5h0.294	c1.007,0,1.972-0.014,2.809-0.618c0.585-0.426,1.033-0.992,1.228-1.757c0.05-0.187,0.09-0.41,0.096-0.633	C35.678,17.199,35.588,16.847,35.424,16.62z M33.742,18.19c-0.115,0.467-0.428,0.86-0.822,1.049	c-0.324,0.16-0.721,0.137-1.125,0.136h-0.252L32.175,17c0.142,0,0.38,0,0.62,0c0.75,0,0.988,0.477,0.986,0.875	C33.781,17.978,33.768,18.084,33.742,18.19z M28.47,29c0,0-0.075,0.219-0.099,0.293c-0.02,0.063-0.1,0.207-0.327,0.207h-0.419V29	H26.5v2.5c-0.007,0.183,0.179,0.5,0.998,0.5h0.932l0.286-0.876l-0.84,0.001c-0.25,0-0.245-0.116-0.248-0.3	c-0.003-0.2-0.003-0.575-0.003-0.575h0.794c0.73,0,0.89-0.606,0.946-0.787L29.474,29H28.47z"></path><path fill="#fefefe" d="M28.824,25c-1.502,0-1.795,0.67-1.795,0.67L27.235,25h-1.21l-1.979,6.083	c-0.021,0.07-0.048,0.18-0.046,0.299C24.006,31.664,24.174,32,24.964,32l0.718-0.001L26.002,31c0,0-0.36,0-0.485,0	c-0.157,0-0.125-0.13-0.125-0.13l0.709-2.152h1.778c1.47,0,1.743-0.9,1.875-1.31L30.538,25C30.538,25,29.369,25,28.824,25z M28.298,28h-2.001l0.206-0.604h2.005L28.298,28z M28.822,26.518c0,0-1.012-0.01-1.175,0.02c-0.717,0.124-1.018,0.508-1.018,0.508	L26.967,26h2.023L28.822,26.518z M37.507,19.234c0,0-0.01,0.04-0.028,0.111C37.325,19.179,37.07,19,36.668,19	c-0.5,0-0.937,0.179-1.45,0.617c-0.451,0.39-0.677,0.926-0.811,1.439c-0.052,0.19-0.083,0.491-0.083,0.694	c0,1.25,1.082,1.25,1.345,1.25c0.395,0,0.71-0.151,0.965-0.347C36.602,22.776,36.543,23,36.543,23h1.451L39,19L37.507,19.234z M36.098,22.116c-0.063,0-0.438,0-0.429-0.411c0.004-0.203,0.052-0.43,0.125-0.691c0.17-0.608,0.399-1.139,1-1.139	c0.47,0,0.461,0.377,0.26,1.133c-0.058,0.217-0.221,0.609-0.348,0.8C36.521,22.086,36.31,22.116,36.098,22.116z M23.768,19.493	C23.471,19.12,22.93,19.001,22.366,19c-0.339,0-1.149,0.031-1.796,0.579c-0.465,0.396-0.69,0.934-0.831,1.449	c-0.142,0.525-0.316,1.471,0.596,1.824C20.616,22.968,21.025,23,21.29,23c0.675,0.001,1.372-0.174,1.908-0.695	c0.413-0.422,0.614-1.051,0.685-1.31C24.114,20.138,23.964,19.737,23.768,19.493z M21.429,22.115c-0.063,0-0.438,0-0.429-0.411	c0.004-0.203,0.06-0.471,0.125-0.691c0.169-0.572,0.4-1.139,1-1.139c0.47,0,0.461,0.377,0.26,1.133	c-0.058,0.217-0.221,0.609-0.348,0.8C21.852,22.086,21.641,22.116,21.429,22.115z M20.847,27.115L20.556,28h0.846l-0.248,0.769	h-0.848L20,29.706h0.845l-0.536,1.639c-0.072,0.217-0.075,0.654,0.738,0.654h1.627L23,31c0,0-0.931,0-1.181,0	s-0.183-0.177-0.183-0.177l0.368-1.132h1.746l0.302-0.921h-1.747L22.56,28h1.713l0.297-0.885H20.847z M39.7,27.916L40,27h-4.037	l-0.294,0.916h1.211l-0.247,0.743h-1.232l-0.263,0.812h1.082l-0.963,1.265C35.18,30.847,35.017,31,34.749,31h-0.486l0.095-0.289	H33.94L35.479,26h0.547l0.172-0.518c0,0,0,0.381,0,0.517c0,0.434,0.125,0.626,0.821,0.626h0.478L37.8,25.69h-0.223	c-0.147,0.003-0.217-0.044-0.205-0.138V25c0,0-0.799,0-1.25,0c-1.175,0-1.903,0.055-2.193,0.132	c-0.351,0.09-0.807,0.357-0.807,0.357L33.279,25H31.98l-1.862,5.722h-0.28L29.52,31.69h2.874L32.293,32h1.229l0.1-0.31h0.402	L33.919,32h1.02c0.259,0,0.468-0.058,0.642-0.155c0.182-0.101,0.325-0.244,0.447-0.407l0.756-1.006l0.115,1.055	C36.928,31.679,37.002,32,37.791,32h0.568l0.329-1h-0.371c-0.265,0-0.322-0.195-0.337-0.297l-0.132-1.024h-0.615l0.25-0.208h1.703	l0.268-0.812h-1.585l0.251-0.743L39.7,27.916z M32.964,26h1.303l-0.278,0.853c0,0-0.462,0.028-0.693,0.08	c-0.393,0.09-0.72,0.248-0.72,0.248L32.964,26z M32.729,30.722h-1.306l0.347-1.064h1.303L32.729,30.722z M33.408,28.622	c0,0-0.346,0.043-0.574,0.095C32.435,28.832,31.979,29,31.979,29l0.4-1.218h1.308L33.408,28.622z"></path>
+</svg></li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="40" height="40" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 84.259 16.068 H 5.741 C 2.57 16.068 0 18.638 0 21.809 v 6.131 v 2 V 60.06 v 2 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 78.518 c 3.171 0 5.741 -2.57 5.741 -5.741 V 62.06 v -2 V 29.94 v -2 v -6.131 C 90 18.638 87.43 16.068 84.259 16.068 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 4 68.191 V 62.06 v -2 V 29.94 v -2 v -6.131 c 0 -3.171 2.57 -5.741 5.741 -5.741 h -4 C 2.57 16.068 0 18.638 0 21.809 v 6.131 V 62.06 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 4 C 6.57 73.932 4 71.362 4 68.191 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(212,212,212); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<linearGradient id="SVGID_2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)"  x1="46.9911" y1="49.5863" x2="55.2245" y2="49.5863">
+<stop offset="0%" style="stop-color:rgb(0,121,64);stop-opacity: 1"/>
+<stop offset="22.85%" style="stop-color:rgb(0,135,63);stop-opacity: 1"/>
+<stop offset="74.33%" style="stop-color:rgb(64,167,55);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(92,181,49);stop-opacity: 1"/>
+</linearGradient>
+<path d="M 58.836 49.393 h 3.942 c 0.113 0 0.375 -0.038 0.488 -0.038 c 0.751 -0.15 1.389 -0.826 1.389 -1.765 c 0 -0.901 -0.638 -1.577 -1.389 -1.765 c -0.113 -0.038 -0.338 -0.038 -0.488 -0.038 h -3.942 V 49.393 L 58.836 49.393 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_2); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 62.327 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 7.096 h 9.649 c 0.225 0 0.488 0 0.676 0.038 c 2.178 0.113 3.792 1.239 3.792 3.191 c 0 1.539 -1.089 2.853 -3.116 3.116 v 0.075 C 68.71 45 70.4 46.239 70.4 48.154 c 0 2.065 -1.877 3.417 -4.355 3.417 H 55.457 v 13.892 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 62.327 24.5 L 62.327 24.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(41,156,60); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<linearGradient id="SVGID_3" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)"  x1="46.9908" y1="52.2613" x2="55.2246" y2="52.2613">
+<stop offset="0%" style="stop-color:rgb(0,121,64);stop-opacity: 1"/>
+<stop offset="22.85%" style="stop-color:rgb(0,135,63);stop-opacity: 1"/>
+<stop offset="74.33%" style="stop-color:rgb(64,167,55);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(92,181,49);stop-opacity: 1"/>
+</linearGradient>
+<path d="M 64.167 42.109 c 0 -0.901 -0.638 -1.502 -1.389 -1.614 c -0.075 0 -0.263 -0.038 -0.375 -0.038 h -3.567 v 3.304 h 3.567 c 0.113 0 0.338 0 0.375 -0.038 C 63.529 43.611 64.167 43.01 64.167 42.109 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_3); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 24.556 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 16.858 c 1.915 0.939 3.905 1.539 5.895 1.539 c 2.365 0 3.642 -1.427 3.642 -3.379 v -7.96 h 5.857 v 7.922 c 0 3.079 -1.915 5.594 -8.41 5.594 c -3.942 0 -7.021 -0.864 -7.021 -0.864 v 14.38 H 27.71 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 24.556 24.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(5,83,154); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 43.442 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 8.936 c 1.727 -1.464 4.731 -2.403 9.574 -2.178 c 2.591 0.113 5.369 0.826 5.369 0.826 v 2.891 c -1.389 -0.713 -3.041 -1.352 -5.181 -1.502 c -3.679 -0.263 -5.895 1.539 -5.895 4.693 c 0 3.191 2.215 4.994 5.895 4.693 c 2.14 -0.15 3.792 -0.826 5.181 -1.502 v 2.891 c 0 0 -2.741 0.713 -5.369 0.826 c -4.843 0.225 -7.847 -0.713 -9.574 -2.178 V 65.5 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 43.442 24.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(192,23,50); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+</svg></li>
+    </ul>
+</div>
+      <em class="cart__note">
+        {{- 'cart.general.subtotal_note' | t -}}
+      </em>
+    </div>
+  </form>
+{%- endcapture -%}
+
+{%- if template.name != 'cart' -%}
+  <div
+    data-section-id="{{ section.id }}"
+    data-section-type="cart-drawer"
+  >
+    <cart-drawer class="drawer drawer--cart{% if cart_item_count == 0 %} is-empty{% endif %}" id="cart-drawer" tabindex="0">
+      <collapsible-elements class="drawer__inner" single="true" data-cart-drawer-inner data-scroll-lock-scrollable>
+
+        <div class="drawer__body" data-cart-drawer-body data-scroll-lock-scrollable>
+
+          {%- unless has_cart_title -%}
+            {%- assign title_block_index = title_block_index | default: 1 -%}
+            {%- assign animation_delay = title_block_index | times: animation_delay_increment | plus: animation_delay_initial -%}
+
+            <div
+              class="cart-block cart-block--top drawer__head"
+              data-animation="{{ animation_name }}"
+              data-animation-duration="{{ animation_duration }}"
+              data-animation-delay="{{ animation_delay }}"
+            >
+              {{ cart_title }}
+            </div>
+          {%- endunless -%}
+
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign pin_to_bottom = block.settings.pin_to_bottom
+
+              if pin_to_bottom
+                assign animation_delay = block_index_pinned | times: animation_delay_increment | plus: animation_delay_initial
+                assign block_index_pinned = block_index_pinned | plus: 1
+              else
+                assign animation_delay = block_index_static | times: animation_delay_increment | plus: animation_delay_initial
+                assign block_index_static = block_index_static | plus: 1
+              endif
+
+              capture cart_block_class
+                echo 'cart-block'
+
+                if block.type == 'title'
+                  echo ' cart-block--top drawer__head'
+                endif
+              endcapture
+            -%}
+
+            {%- capture block_content -%}
+              <div class="{{ cart_block_class }}"
+                data-animation="{{ animation_name }}"
+                data-animation-duration="{{ animation_duration }}"
+                data-animation-delay="{{ animation_delay }}"
+                {{ block.shopify_attributes }}
+              >
+                {%- case block.type -%}
+                  {%- when 'title' -%}
+                    {{ cart_title }}
+
+                  {%- when 'cart-message' -%}
+                    {%- liquid
+                      assign cart_custom_message_text = block.settings.cart_custom_message_text
+                      assign custom_message_color = block.settings.cart_custom_message_color
+                    -%}
+
+                    {%- unless custom_message_color == 'rgba(0,0,0,0)' or custom_message_color == blank -%}
+                      {%- style -%}
+                        .drawer__message--custom { --text: {{ custom_message_color }}; }
+                      {%- endstyle -%}
+                    {%- endunless -%}
+
+                    {%- if cart_custom_message_text != blank -%}
+                      <div class="cart__message drawer__message drawer__message--custom">
+                        {{ cart_custom_message_text }}
+                      </div>
+                    {%- endif -%}
+
+                  {%- when 'products' -%}
+                    {{ cart_items }}
+
+                  {%- when 'upsell-products' -%}
+                    {%- render 'cart-block-upsell', block: block -%}
+
+                  {%- when 'product-list' -%}
+                    {%- render 'cart-block-upsell', block: block -%}
+
+                  {%- when 'free-shipping' -%}
+                    {% comment %} Free shipping {% endcomment %}
+
+{%- liquid
+  assign free_shipping_text = block.settings.message | default: section.settings.message
+  assign show_message = false
+
+  if free_shipping_text != blank
+    assign show_message = true
+  endif
+
+  assign free_shipping_limit = settings.free_shipping_limit
+  assign free_shipping_gradient = block.settings.free_shipping_gradient | default: section.settings.free_shipping_gradient
+-%}
+
+{% if free_shipping_gradient != blank %}
+  {% style %}
+    :root {
+      --FREE-SHIPPING-GRADIENT: {{ free_shipping_gradient }};
+    }
+  {% endstyle %}
+{% endif %}
+
+{%- if show_message -%}
+  {%- liquid
+    assign limit = free_shipping_limit | plus: 0
+    assign limit_currency = limit | times: 100
+    assign subtotal_without_currency = cart.total_price | plus: 0 | divided_by: 100
+    assign percent = limit | minus: subtotal_without_currency | times: 100 | divided_by: limit
+    assign percent = 100 | minus: percent
+
+    if settings.currency_code_enable
+      assign limit_currency = limit_currency | minus: cart.total_price | money_with_currency
+    else
+      assign limit_currency = limit_currency | minus: cart.total_price | money_without_trailing_zeros
+    endif
+
+    capture left_to_spend
+      echo '<span data-left-to-spend>' | append: limit_currency | append: '</span>'
+    endcapture
+
+    assign free_shipping_message = free_shipping_text | replace: '||amount||', left_to_spend
+    assign qualified_shipping_message = 'cart.general.qualified_shipping_message' | t
+
+    capture free_shipping_classes
+      if is_cart_drawer
+        echo 'drawer__message '
+      endif
+
+      if template.name == 'cart'
+        echo 'cart__message '
+      endif
+
+      echo 'free-shipping'
+
+      if subtotal_without_currency >= limit and qualified_shipping_message != blank
+        echo ' is-success'
+      endif
+    endcapture
+  -%}
+
+  <div class="{{ free_shipping_classes }}"
+    data-free-shipping="{% if qualified_shipping_message != blank %}true{% else %}false{% endif %}"
+    data-free-shipping-limit="{{ limit }}"
+  >
+    {%- if show_wheel -%}
+      <div class="free-shipping__graph" data-progress-graph style="--stroke-dashoffset: 87.96459430051421;">
+        <svg height="18" width="18" viewBox="0 0 18 18">
+          <circle r="7" cx="9" cy="9" />
+          <circle class="free-shipping__graph-progress" stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+        </svg>
+      </div>
+    {%- endif -%}
+
+    {%- if qualified_shipping_message != blank -%}
+      <span class="free-shipping__success-message">{{ qualified_shipping_message }}</span>
+    {%- endif -%}
+
+    <span class="free-shipping__default-message">
+      {{ free_shipping_message }}
+    </span>
+
+    {%- if show_progress_bar -%}
+      <progress class="free-shipping__progress-bar" data-progress-bar value="{{ percent }}" max="100"></progress>
+    {%- endif -%}
+
+    <div class="confetti">
+      <span class="confetti__dot confetti__dot--1"></span>
+      <span class="confetti__dot confetti__dot--2"></span>
+      <span class="confetti__dot confetti__dot--3"></span>
+      <span class="confetti__dot confetti__dot--4"></span>
+      <span class="confetti__dot confetti__dot--5"></span>
+      <span class="confetti__dot confetti__dot--6"></span>
+    </div>
+  </div>
+{%- endif -%}
+
+
+                  {%- when 'order-note' -%}
+                    {%- render 'cart-block-order-note', block: block -%}
+
+                  {%- when 'gift-note' -%}
+                    {%- render 'cart-block-gift-note', block: block -%}
+
+                  {%- when 'shipping-estimate' -%}
+                    {%- render 'cart-block-shipping-calculator', block: block -%}
+
+                  {%- when 'icon' -%}
+                    {%- render 'icon' block: block -%}
+
+                  {%- when 'payment-icons' -%}
+                    {%- unless shop.enabled_payment_types == empty -%}
+                      <ul class="cart__payment-icons{% if block.settings.icon_alignment == "center" %} justify-center{% endif %}">
+                        {%- for type in shop.enabled_payment_types -%}
+                          <li>{{ type | payment_type_svg_tag: class: 'payment-icon' }}</li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endunless -%}
+
+                  {%- when 'code' -%}
+                    {%- if block.settings.code != blank -%}
+                      <div class="cart__custom-code">
+                        {{ block.settings.code }}
+                      </div>
+                    {%- endif -%}
+
+                  {%- when 'checkout-buttons' -%}
+                    {{ checkout_buttons }}
+
+                {%- endcase -%}
+              </div>
+            {%- endcapture -%}
+
+            {%- liquid
+              if pin_to_bottom
+                capture pinned_blocks
+                  echo pinned_blocks
+                  echo block_content
+                endcapture
+              else
+                capture static_blocks
+                  echo static_blocks
+                  echo block_content
+                endcapture
+              endif
+            -%}
+          {%- endfor -%}
+
+          {%- if static_blocks != blank -%}
+            {{ static_blocks }}
+          {%- endif -%}
+
+          {%- if product_block.size == 0 -%}
+            <div class="cart-block"
+              data-animation="{{ animation_name }}"
+              data-animation-duration="{{ animation_duration }}"
+              data-animation-delay="{{ animation_delay }}"
+            >
+              {{ cart_items }}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- if has_checkout_buttons == false or pinned_blocks != blank -%}
+          <div class="drawer__foot" data-checkout-buttons style="--base-animation-delay: {{ block_index_static | times: animation_delay_increment }}ms;">
+            {%- if pinned_blocks != blank -%}
+              {{ pinned_blocks }}
+            {%- endif -%}
+
+            {%- unless has_checkout_buttons -%}
+              <div
+                data-animation="{{ animation_name }}"
+                data-animation-duration="{{ animation_duration }}"
+                data-animation-delay="{{ block_index_pinned | times: animation_delay_increment | plus: animation_delay_initial }}"
+              >
+                {{ checkout_buttons }}
+              </div>
+            {%- endunless -%}
+          </div>
+        {%- endif -%}
+
+        <div class="drawer__empty" data-cart-empty data-scroll-lock-scrollable style="--base-animation-delay: {{ animation_delay_initial }}ms">
+          <div class="drawer__empty__inner">
+            <p class="drawer__empty__message" data-animation="{{ animation_name }}" data-animation-duration="{{ animation_duration }}" data-animation-delay="{{ animation_delay_initial }}">
+              {{- 'cart.general.empty' | t -}}
+            </p>
+            {%- assign animation_delay = animation_delay_initial | plus: animation_delay_increment -%}
+
+            {%- if show_empty_cart_menu and linklists[empty_cart_menu].links.size > 0 -%}
+              <div class="drawer__empty__buttons">
+                {%- for link in linklists[empty_cart_menu].links -%}
+                  {%- liquid
+                    assign is_odd_last = false
+                    capture index_type
+                      cycle 'odd', 'even'
+                    endcapture
+
+                    if forloop.last and index_type == 'odd'
+                      assign is_odd_last = true
+                    endif
+                  -%}
+
+                  <div
+                    class="drawer__empty__item{% if is_odd_last %} drawer__empty__item--odd--last{% endif %}"
+                    data-animation="{{ animation_name }}"
+                    data-animation-duration="{{ animation_duration }}"
+                    data-animation-delay="{{ animation_delay }}"
+                    {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
+                  >
+                    <a href="{{ link.url }}" class="btn btn--full btn--primary btn--outline">
+                      {{ link.title | strip_html | escape }}
+                    </a>
+                  </div>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+
+            {%- if empty_cart_products -%}
+              <div class="drawer__empty__product"
+                data-animation="{{ animation_name }}"
+                data-animation-duration="{{ animation_duration }}"
+                data-animation-delay="{{ animation_delay }}"
+              >
+                {%- liquid
+                  assign animation_delay = animation_delay | plus: animation_delay_increment
+                  if empty_cart_products != blank
+                    for upsell_product in empty_cart_products
+                      render 'upsell-product', upsell_product: upsell_product
+                    endfor
+                  endif
+                -%}
+              </div>
+            {%- endif -%}
+
+            {%- if settings.show_recently_viewed_products -%}
+              <div class="drawer__empty__product"
+                id="recently-viewed-products-cart"
+                data-animation="{{ animation_name }}"
+                data-animation-duration="{{ animation_duration }}"
+                data-animation-delay="{{ animation_delay }}"></div>
+            {%- endif -%}
+          </div>
+        </div>
+      </collapsible-elements>
+
+      <span class="underlay drawer__underlay" data-drawer-underlay></span>
+    </cart-drawer>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Cart drawer",
+    "blocks": [
+      {
+        "type": "title",
+        "name": "Title",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Text",
+            "default": "Cart"
+          }
+        ]
+      },
+      {
+        "type": "cart-message",
+        "name": "Cart message",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "cart_custom_message_text",
+            "label": "Text",
+            "default": "<p>Use coupon code <strong>WELCOME10</strong> for 10% off your first order.</p>"
+          },
+          {
+            "type": "color",
+            "id": "cart_custom_message_color",
+            "label": "Text color"
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "free-shipping",
+        "name": "Free shipping message",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "Set a minimum amount for free shipping in [Theme settings](/admin/themes/current/editor?context=theme)"
+          },
+          {
+            "type": "textarea",
+            "id": "message",
+            "label": "Message",
+            "info": "Use ||amount|| to display progress towards free shipping.",
+            "default": "You are ||amount|| away from free shipping."
+          },
+          {
+            "type": "color_background",
+            "id": "free_shipping_gradient",
+            "label": "Custom progress bar gradient"
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "products",
+        "name": "Products",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "upsell-products",
+        "name": "Upsell products",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "upsell_auto_open",
+            "label": "Show upsell products automatically when cart drawer is open",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "order-note",
+        "name": "Order note",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "gift-note",
+        "name": "Gift note",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "shipping-estimate",
+        "name": "Shipping estimate",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "icon",
+        "name": "Icon",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon_name",
+            "label": "Icon",
+            "default": "icon-award",
+            "options": [
+              { "label": "Award", "value": "icon-award" },
+              { "label": "Box", "value": "icon-box" },
+              { "label": "Chat", "value": "icon-chat" },
+              { "label": "Cloud", "value": "icon-cloud" },
+              { "label": "Diameter", "value": "icon-diameter" },
+              { "label": "Discount", "value": "icon-discount" },
+              { "label": "Donation", "value": "icon-donation" },
+              { "label": "Droplet", "value": "icon-droplet" },
+              { "label": "Info", "value": "icon-info-empty" },
+              { "label": "Email", "value": "icon-email" },
+              { "label": "Fast shipment", "value": "icon-fast-shipment" },
+              { "label": "Flare", "value": "icon-flare" },
+              { "label": "Flower", "value": "icon-flower" },
+              { "label": "Gift", "value": "icon-gift" },
+              { "label": "Green shipment", "value": "icon-green-shipment" },
+              { "label": "Heart", "value": "icon-heart" },
+              { "label": "Leaf", "value": "icon-leaf" },
+              { "label": "Lightening", "value": "icon-lightening" },
+              { "label": "Location", "value": "icon-location" },
+              { "label": "Mail", "value": "icon-mail" },
+              { "label": "Notes", "value": "icon-notes" },
+              { "label": "Pants", "value": "icon-pants" },
+              { "label": "Peace", "value": "icon-peace" },
+              { "label": "Pin", "value": "icon-pin" },
+              { "label": "Planet", "value": "icon-planet" },
+              { "label": "Phone", "value": "icon-phone" },
+              { "label": "Recycle", "value": "icon-recycle" },
+              { "label": "Ruler", "value": "icon-ruler" },
+              { "label": "Shield", "value": "icon-shield" },
+              { "label": "Smile", "value": "icon-smile" },
+              { "label": "Star", "value": "icon-star" },
+              { "label": "Tree", "value": "icon-tree" },
+              { "label": "Trophy", "value": "icon-trophy" },
+              { "label": "Truck", "value": "icon-truck" },
+              { "label": "Vegan", "value": "icon-vegan" },
+              { "label": "Wash", "value": "icon-wash" },
+              { "label": "Washing machine", "value": "icon-washing-machine" }
+            ]
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Alternative icon/image"
+          },
+          {
+            "type": "range",
+            "id": "icon_size",
+            "label": "Size",
+            "unit": "px",
+            "min": 20,
+            "max": 80,
+            "step": 5,
+            "default": 20
+          },
+          {
+            "type": "color",
+            "id": "icon_color",
+            "label": "Icon color",
+            "default": "#545454"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Title"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "label": "Text size",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "default": 3
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "product-list",
+        "name": "Product list",
+        "settings": [
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Product list",
+            "limit": 3,
+            "info": "Choose up to 3 products"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Buy it with"
+          },
+          {
+            "type": "checkbox",
+            "id": "upsell_auto_open",
+            "label": "Show products list automatically when cart drawer is open",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "name": "Custom code",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "code",
+            "label": "Custom code",
+            "info": "Add app snippets or other Liquid code to create advanced customizations."
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "payment-icons",
+        "name": "Payment icons",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon_alignment",
+            "label": "Icon alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "checkout-buttons",
+        "name": "Checkout buttons",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_additional_buttons",
+            "label": "Enable additional checkout buttons",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_view_cart_button",
+            "label": "Show 'View cart' button",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_to_bottom",
+            "label": "Pin to bottom",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Cart drawer",
+        "blocks": [
+          {
+            "type": "cart-message"
+          },
+          {
+            "type": "title"
+          },
+          {
+            "type": "free-shipping",
+            "settings": {
+              "message": "You are ||amount|| away from free shipping.",
+              "free_shipping_gradient": ""
+            }
+          },
+          {
+            "type": "order-note",
+            "settings": {
+            }
+          },
+          {
+            "type": "gift-note",
+            "settings": {
+            }
+          },
+          {
+            "type": "products",
+            "settings": {
+            }
+          },
+          {
+            "type": "upsell-products",
+            "settings": {
+            }
+          },
+          {
+            "type": "checkout-buttons"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

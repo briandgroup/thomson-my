@@ -1,0 +1,64 @@
+{% stylesheet %}
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5px 0;
+  }
+
+  .logo-container div {
+      max-width: 150px;
+      margin: 0px 50px 0px 50px;
+  }
+
+  @media (max-width: 600px) {
+      .logo-container {
+          flex-direction: column;
+      }
+
+      .logo-container div {
+          margin: 10px 0;
+      }
+  }
+{% endstylesheet %}
+<div class="logo-container">
+  <div style="text-align: center">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0601/7866/1427/files/GMP.png?v=1719358204"
+      alt=""
+      width="50%"
+      height="50%"
+    >
+    <p style="text-align: center; font-size:12px">Good Manufacturing Practice</p>
+  </div>
+  <!--<div style="text-align: center">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0601/7866/1427/files/icon-03.png?v=1716803619"
+      alt=""
+      width="50%"
+      height="50%"
+    >
+    <p style="text-align: center; font-size:12px">Quality Control Check</p>
+  </div>-->
+  <div style="text-align: center">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0601/7866/1427/files/icon-01.png?v=1716803619"
+      alt=""
+      width="50%"
+      height="50%"
+    >
+    <p style="text-align: center; font-size:12px">Halal</p>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "TDG Certificates",
+  "settings": [],
+   "presets": [
+    {
+      "name": "TDG Certificates"
+    }
+  ]
+}
+{% endschema %}

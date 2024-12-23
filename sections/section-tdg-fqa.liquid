@@ -1,0 +1,77 @@
+{% schema %}
+{
+  "name": "Amlas",
+  "settings": [
+     {
+      "type": "header",
+      "content": "Layout"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Entry",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is your question?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Answer goes here..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default FAQ-TDG",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  {{ 'section-tdg-faq.css' | asset_url | stylesheet_tag }}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<div class="faq-tdg-accordion">
+  {% for block in section.blocks %}
+    <div class="faq-tdg-entry {% if forloop.index > 3 %}hidden{% endif %}">
+      <button class="tdg-accordion">{{ block.settings.question }}</button>
+      <div class="tdg-panel">
+        <p>{{ block.settings.answer }}</p>
+      </div>
+    </div>
+  {% endfor %}
+  {% if section.blocks.size > 3 %}
+    <button class="show-more" onclick="showMore()">Show More</button>
+  {% endif %}
+</div>
+
+<script>
+  document.querySelectorAll('.tdg-accordion').forEach(button => {
+    button.addEventListener('click', function() {
+      this.classList.toggle('active');
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+
+  function showMore() {
+    document.querySelectorAll('.hidden').forEach(e => e.classList.remove('hidden'));
+    document.querySelector('.show-more').style.display = 'none';
+  }
+</script>

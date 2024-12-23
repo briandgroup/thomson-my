@@ -1,0 +1,87 @@
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+  assign border_color = section.settings.border_color
+  assign columns = section.settings.columns
+  assign animation_anchor = '#AccordionGroup--' | append: section.id
+  assign animation_order = 0
+-%}
+
+{%- style -%}
+  #AccordionGroup--{{ section.id }} {
+    --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+    --accordion-columns: {{ columns }};
+    --bg: {{ bg_color | default: 'transparent' }};
+    --text: {{ text_color | default: '#333' }};
+    --border: {{ border_color | default: '#ddd' }};
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show-more {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+{%- endstyle -%}
+
+<div id="AccordionGroup--{{ section.id }}" class="accordion-group section-padding">
+  {%- if section.blocks.size > 0 -%}
+    <div
+      class="faq {{ section.settings.width }}"
+      data-section-id="{{ section.id }}"
+      data-section-type="faq"
+    >
+      <collapsible-elements single="true">
+        <div class="accordion-group__items">
+          {%- for block in section.blocks -%}
+            <details
+              class="accordion {% if forloop.index > 3 %}hidden{% endif %}"
+              data-collapsible
+              {% if block.settings.default_open %}
+                open="true"
+              {% endif %}
+              {{ block.shopify_attributes }}
+            >
+              <summary class="accordion__title h6" data-collapsible-trigger>
+                {{ block.settings.title }}
+              </summary>
+              <div
+                class="accordion__body rte"
+                {% if block.settings.default_open %}
+                  style="height: auto;"
+                {% endif %}
+                data-collapsible-body
+              >
+                <div class="accordion__content" data-collapsible-content>
+                  {{ block.settings.content }}
+                </div>
+              </div>
+            </details>
+          {%- endfor -%}
+        </div>
+        {% if section.blocks.size > 3 %}
+          <button class="show-more" onclick="showMoreItems()">Show More</button>
+        {% endif %}
+      </collapsible-elements>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  function showMoreItems() {
+    document.querySelectorAll('.hidden').forEach(element => {
+      element.classList.remove('hidden');
+    });
+    document.querySelector('.show-more').style.display = 'none';
+  }
+</script>

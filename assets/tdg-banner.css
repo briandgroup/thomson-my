@@ -1,0 +1,22 @@
+.shopify-payment-button__button--unbranded {
+  background-color: #ffffff;
+  border-radius: 50px;
+  --btn-text-hover: #ffffff;
+  --btn-text: #6b2132;
+  border: 2px solid #6b2132;
+}
+.index-product {
+  background-image: url("https://cdn.shopify.com/s/files/1/0601/7866/1427/files/lbn.jpg");
+  background-size: cover;
+  padding-top:20px;
+  height: 800px;
+}
+.btn--primary.btn--outline {
+  background-color: #6b2132;
+  border-radius: 50px;
+  color: #ffffff;
+  border: 2px solid #6b2132;
+}
+.radio__fieldset .radio__button input:checked ~ label {
+  border-color: #ebb240;
+}

@@ -1,0 +1,213 @@
+{% stylesheet %}
+    .amlas-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .accordion-amlas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    .accordion-amlas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .accordion-amlas-icon {
+      font-size: 1.5em;
+      color: #419C91;
+      transition: transform 0.3s ease;
+  }
+
+  .accordion-amlas.active .accordion-amlas-icon {
+      transform: rotate(45deg);
+  }
+
+        .accordion-amlas {
+            background-color: white;
+            border: 1px solid #419C91;
+            border-radius: 5px;
+            width: calc(50% - 10px);
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-amlas:hover {
+            background-color: #f9f9f9;
+        }
+
+        .accordion-amlas-content {
+            display: none;
+            padding: 10px 0;
+            border-top: 1px solid #419C91;
+            text-align: left;
+          transition: display 0.3s ease;
+        }
+
+        .show-more {
+            display: none;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #419C91;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+  #see-more-button{
+    color:white;
+  }
+
+        @media (max-width: 600px) {
+            .accordion-amlas {
+                width: 100%;
+            }
+        }
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
+<div class="amlas-container">
+  <!-- <div class="title">You maybe also wondering</div> -->
+  <div class="accordion-amlas-container">
+    <div class="accordion-amlas">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">Who should not take probiotics?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">How long probiotics take to work?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">How many CFU of probiotics should i take per day?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">Can I take probiotics before bed?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">How to tell if probiotics are working?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">What is a good cfu for probiotics?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">What are the benefits of CFU probiotics?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">Is it OK to take probiotics every day?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">Should I take probiotics in the morning or at night?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+    <div class="accordion-amlas show-more">
+      <div class="accordion-amlas-header">
+        <span class="accordion-amlas-title">Can I take probiotics on an empty stomach?</span>
+        <span class="accordion-amlas-icon">+</span>
+      </div>
+      <div class="accordion-amlas-content">lorem</div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button id="see-more-button">See More</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+           const accordions = document.querySelectorAll('.accordion-amlas');
+           accordions.forEach(accordion => {
+               accordion.addEventListener('click', function () {
+                   this.classList.toggle('active');
+                   const content = this.querySelector('.accordion-amlas-content');
+                   if (content.style.display === "block") {
+                       content.style.display = "none";
+                   } else {
+                       content.style.display = "block";
+                   }
+               });
+           });
+
+           const seeMoreButton = document.getElementById('see-more-button');
+           const hiddenAccordions = document.querySelectorAll('.accordion-amlas.show-more');
+
+           seeMoreButton.addEventListener('click', function () {
+               if (this.textContent === 'See More') {
+                   hiddenAccordions.forEach(accordion => {
+                       accordion.style.display = 'block';
+                   });
+                   this.textContent = 'Show Less';
+               } else {
+                   hiddenAccordions.forEach(accordion => {
+                       accordion.style.display = 'none';
+                   });
+                   this.textContent = 'See More';
+               }
+           });
+
+           // Initially hide the additional accordions
+           hiddenAccordions.forEach(accordion => {
+               accordion.style.display = 'none';
+           });
+       });
+</script>
+{% schema %}
+{
+  "name": "TDG Accordions-Probiogut",
+  "settings": [],
+   "presets": [
+    {
+      "name": "TDG Accordions-Probiogut"
+    }
+  ]
+}
+{% endschema %}

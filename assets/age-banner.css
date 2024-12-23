@@ -1,0 +1,26 @@
+.product__submit__item
+  .shopify-payment-button
+  .shopify-payment-button__button--unbranded {
+  background-color: #ffffff;
+  border-radius: 50px;
+  --btn-text-hover: #ffffff;
+  --btn-text: #004415;
+  border: 2px solid #004415;
+}
+
+.btn--primary.btn--outline {
+  background-color: #004415;
+  border-radius: 50px;
+  color: #ffffff;
+  border: 2px solid #004415;
+}
+.radio__fieldset .radio__button input:checked ~ label {
+  border-color: #004415;
+}
+
+.select-popout__toggle {
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #004415;
+  border: 2px solid #004415;
+}
