@@ -12,15 +12,6 @@
     "main": {
       "type": "product",
       "blocks": {
-        "text_gyJzXc": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text": "",
-            "layout": "left",
-            "padding_bottom": 16
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -34,6 +25,15 @@
           "settings": {
             "title": "Gift of Energy, Comfort and Endurance this Chinese New Year",
             "text": "",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "text_gyJzXc": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>Each gift box consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson Activated Ginkgo Extract 60s</li><li>Thomson OsteoPro 60s </li><li>Exclusive Thomson Ang Pao </li></ul>",
             "layout": "left",
             "padding_bottom": 16
           }
@@ -142,9 +142,9 @@
         }
       },
       "block_order": [
-        "text_gyJzXc",
         "title",
         "text_YeiRnP",
+        "text_gyJzXc",
         "price",
         "judge_me_reviews_preview_badge_LgCTDt",
         "variants",
