@@ -20,6 +20,9 @@
 {% if product.url contains 'thomson-calmilax' or product.url contains 'cml' %}
   {{ 'calmilax-banner.css' | asset_url | stylesheet_tag }}
 {% endif %}
+{% if product.url contains '/products/' %}
+  {{ 'wlATC.css' | asset_url | stylesheet_tag }}
+{% endif %}
 <!-- Add more conditions here for every product -->
 
 <script>
@@ -30,7 +33,6 @@
       }
       document.querySelector('.xyz-rock').children[0].style.transform = "translateY(66px)";
       document.querySelector('.xyz-rock style').remove();
-      {{ 'wlATC.css' | asset_url | stylesheet_tag }}
       console.log("WL-", "{{ 'wlATC.css' | asset_url | stylesheet_tag }}");
       clearInterval(intervalATCMessage);
       return;
