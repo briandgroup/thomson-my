@@ -1,5 +1,11 @@
 /** @format */
 
+#wlATCText {
+    margin-right: 16px;
+    color: white;
+    font-size: 14px;
+}
+
 @-webkit-keyframes rocks_bounce {
   0%0,
   20%,
