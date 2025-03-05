@@ -33,6 +33,14 @@
       }
       document.querySelector('.xyz-rock').children[0].style.transform = "translateY(66px)";
       document.querySelector('.xyz-rock style').remove();
+
+      const rn = document.querySelector(".rockApp_PC_Preview_Quantity");
+      const pt = document.createElement("p");
+      pt.id = 'wlATCText';
+      pt.style.marginRight = '1.2rem';
+      pt.innerHTML = "SIGN IN to enjoy 2x points for any purchase made in Thomson Official store";
+      rn.parentNode.insertBefore(pt, rn.nextSibling);
+      
       clearInterval(intervalATCMessage);
       return;
     }, 500)
