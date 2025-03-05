@@ -39,6 +39,8 @@
       pt.id = 'wlATCText';
       pt.innerHTML = "SIGN IN to enjoy 2x points for any purchase made in Thomson Official store";
       rn.parentNode.insertBefore(pt, rn.nextSibling);
+
+      document.querySelector('.rockApp_PCPreviewbutton').classList.remove('shopify-payment-button__button--unbranded');
       
       clearInterval(intervalATCMessage);
       return;
