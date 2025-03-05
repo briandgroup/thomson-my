@@ -6,6 +6,12 @@
     font-size: 14px;
 }
 
+@media (max-width: 70em) {
+  .xyz-rock {
+      display: none !important;
+  }
+}
+
 @-webkit-keyframes rocks_bounce {
   0%0,
   20%,
