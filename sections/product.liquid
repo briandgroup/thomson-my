@@ -29,11 +29,13 @@
   (function() {
     const intervalATCMessage = setInterval(() => {
       if(document.querySelector('.xyz-rock') === null) {
+        console.log('no')
         return;
       }
       document.querySelector('.xyz-rock').children[0].style.transform = "translateY(66px)";
       document.querySelector('.xyz-rock style').remove();
       clearInterval(intervalATCMessage);
+      console.log('yes')
       return;
     }, 500)
   })();
