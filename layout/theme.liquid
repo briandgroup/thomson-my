@@ -379,14 +379,14 @@ defer>
 </script> -->
 
 <style>
-  .slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
+  .slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
 }
-@-webkit-keyframes slideInRight {
+@-webkit-keyframes slideInLeft {
   0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
   to {
@@ -394,10 +394,10 @@ defer>
     transform: translateZ(0);
   }
 }
-@keyframes slideInRight {
+@keyframes slideInLeft {
   0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
   to {
