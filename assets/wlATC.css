@@ -7,7 +7,7 @@
     text-wrap: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .xyz-rock {
       display: none !important;
   }
