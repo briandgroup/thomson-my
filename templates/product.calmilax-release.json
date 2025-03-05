@@ -1,1 +1,632 @@
-{"sections":{"main":{"type":"product","blocks":{"text_gyJzXc":{"type":"text","settings":{"title":"","text":"","layout":"left","padding_bottom":16}},"title":{"type":"title","settings":{"subheading_option":"breadcrumb","text_size":6,"padding_bottom":8}},"text_YeiRnP":{"type":"text","settings":{"title":"Traditionally used for difficulty in sleeping","text":"","layout":"left","padding_bottom":16}},"price":{"type":"price","settings":{"padding_bottom":16}},"judge_me_reviews_preview_badge_LgCTDt":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"text_WCPVmH":{"type":"text","settings":{"title":"","text":"<p><em>Always read the label and follow the directions for use. Read the warnings below before purchase.<\/em><\/p>","layout":"left","padding_bottom":16}},"divider_FMmF9b":{"type":"divider","settings":{"show_line":true,"padding_bottom":20}},"inventory_countdown_hUEHjP":{"type":"inventory_countdown","settings":{"show_notice":"low-inventory","max_inventory":10,"hide_inventory_counter":true,"icon_size":20,"in_stock_color":"#56ad6a","low_stock_color":"#f79554","out_of_stock_color":"#721c24","padding_bottom":16}},"icon_Rndzkh":{"type":"icon","settings":{"icon_name":"icon-award","image":"shopify:\/\/shop_images\/check-icon2.svg","icon_size":20,"icon_color":"#545454","title":"Item in Stock","text_size":3,"width":"full","padding_bottom":16}},"buttons":{"type":"buttons","settings":{"show_quantity":true,"show_payment_button":true,"show_gift_card_recipient":false,"padding_bottom":32}},"code_FX7FRH":{"type":"code","settings":{"code":"<div style=\"text-align:center\">\n    <p style=\"font-size:20px\">We Accept:<\/p>\n    <ul class=\"supporting-menu__payment payment-icons inline-list\" style=\"display: flex; justify-content: center; list-style-type: none; padding: 0;\">\n   <li><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<path fill=\"#1565C0\" d=\"M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z\"><\/path><path fill=\"#FFF\" d=\"M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z\"><\/path><path fill=\"#FFC107\" d=\"M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z\"><\/path>\n<\/svg><\/li>     \n\n<li>\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<path fill=\"#3F51B5\" d=\"M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z\"><\/path><path fill=\"#FFC107\" d=\"M30 14A10 10 0 1 0 30 34A10 10 0 1 0 30 14Z\"><\/path><path fill=\"#FF3D00\" d=\"M22.014,30c-0.464-0.617-0.863-1.284-1.176-2h5.325c0.278-0.636,0.496-1.304,0.637-2h-6.598C20.07,25.354,20,24.686,20,24h7c0-0.686-0.07-1.354-0.201-2h-6.598c0.142-0.696,0.359-1.364,0.637-2h5.325c-0.313-0.716-0.711-1.383-1.176-2h-2.973c0.437-0.58,0.93-1.122,1.481-1.595C21.747,14.909,19.481,14,17,14c-5.523,0-10,4.477-10,10s4.477,10,10,10c3.269,0,6.162-1.575,7.986-4H22.014z\"><\/path>\n<\/svg>\n<\/li>\n\n<li><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1\" x1=\"2.234\" x2=\"13.54\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#f44f5a\"><\/stop><stop offset=\".443\" stop-color=\"#ee3d4a\"><\/stop><stop offset=\"1\" stop-color=\"#e52030\"><\/stop><\/linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1)\" d=\"M10,9h11.585c1.617,0,2.623,1.362,2.246,3.039l-5.394,23.927 c-0.381,1.671-2,3.034-3.618,3.034H3.235c-1.369-0.001-2.302-0.98-2.325-2.296c-0.004-0.237,0.021-0.484,0.079-0.739l5.396-23.927 C6.762,10.362,8.381,9,10,9\"><\/path><linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2\" x1=\"13.128\" x2=\"26.645\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#0077d2\"><\/stop><stop offset=\"1\" stop-color=\"#0b59a2\"><\/stop><\/linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2)\" d=\"M20.5,9h13.47c1.657,0,0.91,1.362,0.52,3.039l-5.527,23.928 C28.575,37.637,28.696,39,27.035,39H13.38c-1.39,0-2.336-0.955-2.379-2.246c-0.008-0.251,0.018-0.516,0.081-0.788l5.711-23.928 C17.187,10.362,18.657,9,20.316,9\"><\/path><linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3\" x1=\"24\" x2=\"47\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#37c6d0\"><\/stop><stop offset=\"1\" stop-color=\"#1a9ba1\"><\/stop><\/linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3)\" d=\"M33.273,9h11.401c1.183,0,2.039,0.727,2.266,1.773c0.044,0.204,0.064,0.42,0.059,0.645 c-0.005,0.2-0.031,0.408-0.079,0.62l-5.393,23.928C41.146,37.637,39.525,39,37.906,39h-11.58c-1.355,0-2.279-0.953-2.324-2.241 c-0.009-0.253,0.016-0.518,0.078-0.792l5.578-23.928C30.036,10.362,31.653,9,33.273,9z\"><\/path><path fill=\"#fefefe\" d=\"M19.364,18.117c-0.325-0.195-0.905-0.134-1.302,0.135c-0.396,0.263-0.45,0.636-0.126,0.833\tc0.319,0.189,0.902,0.134,1.296-0.137C19.626,18.68,19.685,18.31,19.364,18.117z M42.308,19.376l-1.171,2.048L40.874,19l-1.24,0.294\tl0.454,3.963l-1.415,2.293c-0.038,0.054-0.072,0.091-0.119,0.107c-0.052,0.025-0.118,0.03-0.21,0.03h-0.04L38,26.624l0.75,0.001\tc0.53-0.002,0.904-0.288,1.092-0.625L44,19L42.308,19.376z M22.157,25l-0.404,0.701C21.666,25.854,21.518,26,21.19,26h-0.201\tl-0.282,0.875h0.668c0.787,0,1.158-0.431,1.158-0.431h2.086l0.301-0.933h-1.752l0.28-0.51L22.157,25z M10.416,19.885\tc-0.194,0.75-0.341,1.24-0.679,1.585c-0.233,0.238-0.593,0.351-0.923,0.35c-0.493,0-0.91-0.311-0.883-0.823\tc0.002-0.038,0.007-0.078,0.014-0.119C8.187,19.531,9.242,16,9.242,16H7.275l-1.02,4.03c0,0-0.25,0.968-0.255,1.379\tc-0.004,0.313,0.047,0.569,0.164,0.785C6.54,22.879,7.652,23,8.288,23c1.088,0,1.731-0.104,2.257-0.424\tc0.839-0.51,1.082-1.2,1.341-2.175C12.178,19.305,13,16,13,16h-1.595C11.405,16,10.417,19.883,10.416,19.885z M13.701,23\tl0.705-2.869C14.559,20.065,14.709,20,14.851,20c0.338,0,0.414,0.281,0.397,0.393C15.234,20.529,14.658,23,14.658,23h1.404\tl0.491-2.068c0.204-0.764,0.307-1.152,0.177-1.468C16.594,19.111,16.246,19,15.924,19c-0.21,0-0.596,0.073-0.946,0.234\tc-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L12.25,23H13.701z M25.576,23l0.705-2.869\tC26.434,20.065,26.584,20,26.726,20c0.338,0,0.414,0.281,0.397,0.393C27.109,20.529,26.533,23,26.533,23h1.404l0.491-2.068\tc0.204-0.764,0.307-1.152,0.177-1.468C28.469,19.111,28.121,19,27.799,19c-0.21,0-0.596,0.073-0.946,0.234\tc-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L24.125,23H25.576z M17,23h1.451l0.75-3l-1.486,0.22L17,23z M35.424,16.62c-0.414-0.603-1.269-0.615-2.257-0.62c-0.001,0-0.727,0-0.727,0h-1.614L29,23h1.579l0.665-2.5h0.294\tc1.007,0,1.972-0.014,2.809-0.618c0.585-0.426,1.033-0.992,1.228-1.757c0.05-0.187,0.09-0.41,0.096-0.633\tC35.678,17.199,35.588,16.847,35.424,16.62z M33.742,18.19c-0.115,0.467-0.428,0.86-0.822,1.049\tc-0.324,0.16-0.721,0.137-1.125,0.136h-0.252L32.175,17c0.142,0,0.38,0,0.62,0c0.75,0,0.988,0.477,0.986,0.875\tC33.781,17.978,33.768,18.084,33.742,18.19z M28.47,29c0,0-0.075,0.219-0.099,0.293c-0.02,0.063-0.1,0.207-0.327,0.207h-0.419V29\tH26.5v2.5c-0.007,0.183,0.179,0.5,0.998,0.5h0.932l0.286-0.876l-0.84,0.001c-0.25,0-0.245-0.116-0.248-0.3\tc-0.003-0.2-0.003-0.575-0.003-0.575h0.794c0.73,0,0.89-0.606,0.946-0.787L29.474,29H28.47z\"><\/path><path fill=\"#fefefe\" d=\"M28.824,25c-1.502,0-1.795,0.67-1.795,0.67L27.235,25h-1.21l-1.979,6.083\tc-0.021,0.07-0.048,0.18-0.046,0.299C24.006,31.664,24.174,32,24.964,32l0.718-0.001L26.002,31c0,0-0.36,0-0.485,0\tc-0.157,0-0.125-0.13-0.125-0.13l0.709-2.152h1.778c1.47,0,1.743-0.9,1.875-1.31L30.538,25C30.538,25,29.369,25,28.824,25z M28.298,28h-2.001l0.206-0.604h2.005L28.298,28z M28.822,26.518c0,0-1.012-0.01-1.175,0.02c-0.717,0.124-1.018,0.508-1.018,0.508\tL26.967,26h2.023L28.822,26.518z M37.507,19.234c0,0-0.01,0.04-0.028,0.111C37.325,19.179,37.07,19,36.668,19\tc-0.5,0-0.937,0.179-1.45,0.617c-0.451,0.39-0.677,0.926-0.811,1.439c-0.052,0.19-0.083,0.491-0.083,0.694\tc0,1.25,1.082,1.25,1.345,1.25c0.395,0,0.71-0.151,0.965-0.347C36.602,22.776,36.543,23,36.543,23h1.451L39,19L37.507,19.234z M36.098,22.116c-0.063,0-0.438,0-0.429-0.411c0.004-0.203,0.052-0.43,0.125-0.691c0.17-0.608,0.399-1.139,1-1.139\tc0.47,0,0.461,0.377,0.26,1.133c-0.058,0.217-0.221,0.609-0.348,0.8C36.521,22.086,36.31,22.116,36.098,22.116z M23.768,19.493\tC23.471,19.12,22.93,19.001,22.366,19c-0.339,0-1.149,0.031-1.796,0.579c-0.465,0.396-0.69,0.934-0.831,1.449\tc-0.142,0.525-0.316,1.471,0.596,1.824C20.616,22.968,21.025,23,21.29,23c0.675,0.001,1.372-0.174,1.908-0.695\tc0.413-0.422,0.614-1.051,0.685-1.31C24.114,20.138,23.964,19.737,23.768,19.493z M21.429,22.115c-0.063,0-0.438,0-0.429-0.411\tc0.004-0.203,0.06-0.471,0.125-0.691c0.169-0.572,0.4-1.139,1-1.139c0.47,0,0.461,0.377,0.26,1.133\tc-0.058,0.217-0.221,0.609-0.348,0.8C21.852,22.086,21.641,22.116,21.429,22.115z M20.847,27.115L20.556,28h0.846l-0.248,0.769\th-0.848L20,29.706h0.845l-0.536,1.639c-0.072,0.217-0.075,0.654,0.738,0.654h1.627L23,31c0,0-0.931,0-1.181,0\ts-0.183-0.177-0.183-0.177l0.368-1.132h1.746l0.302-0.921h-1.747L22.56,28h1.713l0.297-0.885H20.847z M39.7,27.916L40,27h-4.037\tl-0.294,0.916h1.211l-0.247,0.743h-1.232l-0.263,0.812h1.082l-0.963,1.265C35.18,30.847,35.017,31,34.749,31h-0.486l0.095-0.289\tH33.94L35.479,26h0.547l0.172-0.518c0,0,0,0.381,0,0.517c0,0.434,0.125,0.626,0.821,0.626h0.478L37.8,25.69h-0.223\tc-0.147,0.003-0.217-0.044-0.205-0.138V25c0,0-0.799,0-1.25,0c-1.175,0-1.903,0.055-2.193,0.132\tc-0.351,0.09-0.807,0.357-0.807,0.357L33.279,25H31.98l-1.862,5.722h-0.28L29.52,31.69h2.874L32.293,32h1.229l0.1-0.31h0.402\tL33.919,32h1.02c0.259,0,0.468-0.058,0.642-0.155c0.182-0.101,0.325-0.244,0.447-0.407l0.756-1.006l0.115,1.055\tC36.928,31.679,37.002,32,37.791,32h0.568l0.329-1h-0.371c-0.265,0-0.322-0.195-0.337-0.297l-0.132-1.024h-0.615l0.25-0.208h1.703\tl0.268-0.812h-1.585l0.251-0.743L39.7,27.916z M32.964,26h1.303l-0.278,0.853c0,0-0.462,0.028-0.693,0.08\tc-0.393,0.09-0.72,0.248-0.72,0.248L32.964,26z M32.729,30.722h-1.306l0.347-1.064h1.303L32.729,30.722z M33.408,28.622\tc0,0-0.346,0.043-0.574,0.095C32.435,28.832,31.979,29,31.979,29l0.4-1.218h1.308L33.408,28.622z\"><\/path>\n<\/svg><\/li>\n\n<li><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\" width=\"40\" height=\"40\" viewBox=\"0 0 256 256\" xml:space=\"preserve\">\n\n<defs>\n<\/defs>\n<g style=\"stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;\" transform=\"translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)\" >\n\t<path d=\"M 84.259 16.068 H 5.741 C 2.57 16.068 0 18.638 0 21.809 v 6.131 v 2 V 60.06 v 2 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 78.518 c 3.171 0 5.741 -2.57 5.741 -5.741 V 62.06 v -2 V 29.94 v -2 v -6.131 C 90 18.638 87.43 16.068 84.259 16.068 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<path d=\"M 4 68.191 V 62.06 v -2 V 29.94 v -2 v -6.131 c 0 -3.171 2.57 -5.741 5.741 -5.741 h -4 C 2.57 16.068 0 18.638 0 21.809 v 6.131 V 62.06 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 4 C 6.57 73.932 4 71.362 4 68.191 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(212,212,212); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<linearGradient id=\"SVGID_2\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)\"  x1=\"46.9911\" y1=\"49.5863\" x2=\"55.2245\" y2=\"49.5863\">\n<stop offset=\"0%\" style=\"stop-color:rgb(0,121,64);stop-opacity: 1\"\/>\n<stop offset=\"22.85%\" style=\"stop-color:rgb(0,135,63);stop-opacity: 1\"\/>\n<stop offset=\"74.33%\" style=\"stop-color:rgb(64,167,55);stop-opacity: 1\"\/>\n<stop offset=\"100%\" style=\"stop-color:rgb(92,181,49);stop-opacity: 1\"\/>\n<\/linearGradient>\n<path d=\"M 58.836 49.393 h 3.942 c 0.113 0 0.375 -0.038 0.488 -0.038 c 0.751 -0.15 1.389 -0.826 1.389 -1.765 c 0 -0.901 -0.638 -1.577 -1.389 -1.765 c -0.113 -0.038 -0.338 -0.038 -0.488 -0.038 h -3.942 V 49.393 L 58.836 49.393 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_2); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<path d=\"M 62.327 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 7.096 h 9.649 c 0.225 0 0.488 0 0.676 0.038 c 2.178 0.113 3.792 1.239 3.792 3.191 c 0 1.539 -1.089 2.853 -3.116 3.116 v 0.075 C 68.71 45 70.4 46.239 70.4 48.154 c 0 2.065 -1.877 3.417 -4.355 3.417 H 55.457 v 13.892 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 62.327 24.5 L 62.327 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(41,156,60); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<linearGradient id=\"SVGID_3\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)\"  x1=\"46.9908\" y1=\"52.2613\" x2=\"55.2246\" y2=\"52.2613\">\n<stop offset=\"0%\" style=\"stop-color:rgb(0,121,64);stop-opacity: 1\"\/>\n<stop offset=\"22.85%\" style=\"stop-color:rgb(0,135,63);stop-opacity: 1\"\/>\n<stop offset=\"74.33%\" style=\"stop-color:rgb(64,167,55);stop-opacity: 1\"\/>\n<stop offset=\"100%\" style=\"stop-color:rgb(92,181,49);stop-opacity: 1\"\/>\n<\/linearGradient>\n<path d=\"M 64.167 42.109 c 0 -0.901 -0.638 -1.502 -1.389 -1.614 c -0.075 0 -0.263 -0.038 -0.375 -0.038 h -3.567 v 3.304 h 3.567 c 0.113 0 0.338 0 0.375 -0.038 C 63.529 43.611 64.167 43.01 64.167 42.109 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_3); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<path d=\"M 24.556 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 16.858 c 1.915 0.939 3.905 1.539 5.895 1.539 c 2.365 0 3.642 -1.427 3.642 -3.379 v -7.96 h 5.857 v 7.922 c 0 3.079 -1.915 5.594 -8.41 5.594 c -3.942 0 -7.021 -0.864 -7.021 -0.864 v 14.38 H 27.71 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 24.556 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(5,83,154); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n\t<path d=\"M 43.442 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 8.936 c 1.727 -1.464 4.731 -2.403 9.574 -2.178 c 2.591 0.113 5.369 0.826 5.369 0.826 v 2.891 c -1.389 -0.713 -3.041 -1.352 -5.181 -1.502 c -3.679 -0.263 -5.895 1.539 -5.895 4.693 c 0 3.191 2.215 4.994 5.895 4.693 c 2.14 -0.15 3.792 -0.826 5.181 -1.502 v 2.891 c 0 0 -2.741 0.713 -5.369 0.826 c -4.843 0.225 -7.847 -0.713 -9.574 -2.178 V 65.5 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 43.442 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(192,23,50); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" \/>\n<\/g>\n<\/svg><\/li>\n    <\/ul>\n<\/div>","padding_bottom":16}},"tabs":{"type":"tab_richtext","settings":{"show_description":true,"show_read_more":false,"title_1":"Ingredients","raw_content_1":"<p>Each 520mg Tablet contains patented Rafuma leaves extract and Kanna leaves extract, Brewer Yeast and our Flagship Activated Ginkgo.<\/p>","title_2":"Health Benefits","raw_content_2":"<p>Promote restful sleep using only natural ingredients.<\/p>","title_3":"","raw_content_3":"","title_4":"","raw_content_4":"","title_5":"","raw_content_5":"","padding_bottom":0}},"divider_1":{"type":"divider","settings":{"show_line":true,"padding_bottom":16}}},"block_order":["text_gyJzXc","title","text_YeiRnP","price","judge_me_reviews_preview_badge_LgCTDt","variants","text_WCPVmH","divider_FMmF9b","inventory_countdown_hUEHjP","icon_Rndzkh","buttons","code_FX7FRH","tabs","divider_1"],"custom_css":[],"settings":{"product_sticky_enable":false,"variant_image_scroll":true,"image_layout":"thumbnails","image_size":"normal","show_cart_bar":true,"enable_zoom":true,"enable_video_looping":false,"mobile_image_style":"thumbs","padding_top":30,"padding_bottom":30}},"section_custom_content_ac73aF":{"type":"section-custom-content","blocks":{"text_gzYNVr":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"Overview","heading_size":7,"text":"","text_size":4,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-center","bg_color":"","color":""}},"text_iPm4aM":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"","heading_size":7,"text":"<p>To help improve sleep quality, Thomson CalmiLax combines the benefits of Rafuma leaf extract, Kanna leaf extract, our patented Ginkgo biloba, and Nutritional Brewer Yeast. This unique formulation is vegetarian-friendly and made from natural, plant-based ingredients.<\/p>","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"","color":""}}},"block_order":["text_gzYNVr","text_iPm4aM"],"settings":{"height":"screen-height-one-half","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full-padded","borders":false,"gutters":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"section_divider_wfEUMb":{"type":"section-divider","custom_css":[],"settings":{"show_line":true,"width":"wrapper--narrow","border_color":"#e6d7ce","bg_color":"","padding_top":16,"padding_bottom":12}},"tdg_certificates_K3U6MM":{"type":"tdg-certificates","settings":{}},"tdg_accordion_key_elements_jQiane":{"type":"tdg-accordion-key-elements","blocks":{"heading_A6rGQJ":{"type":"heading","settings":{"title":"Active Ingredients Per Tablet"}},"question_Kdq6p7":{"type":"question","settings":{"default_open":false,"title":"Kanna Aeriel Extract","subtitle":"<p>12 mg<\/p>","content":"","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_LHWJjQ":{"type":"question","settings":{"default_open":false,"title":"Patented Rafuma Leaves Extract","subtitle":"<p><strong>25<\/strong> mg<\/p>","content":"<p> <\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_QN476h":{"type":"question","settings":{"default_open":false,"title":"Ginkgo Biloba Leaves Extract","subtitle":"<p><strong>10<\/strong> mg<\/p>","content":"","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_Betmii":{"type":"question","settings":{"default_open":false,"title":"Flagship Activated Ginkgo Biloba Extract","subtitle":"<p><strong>10 mg<\/strong><\/p>","content":"<p> <\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_9za3xU":{"type":"question","settings":{"default_open":false,"title":"Patented Kanna aeriel extract","subtitle":"<p><strong>12 mg<\/strong><\/p>","content":"<p> <\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_yRCEVT":{"type":"question","settings":{"default_open":false,"title":"Brewer Yeast","subtitle":"<p><strong>12 mg<\/strong><\/p>","content":"<p> <\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}}},"block_order":["heading_A6rGQJ","question_Kdq6p7","question_LHWJjQ","question_QN476h","question_Betmii","question_9za3xU","question_yRCEVT"],"custom_css":[".accordion__heading:first-child {text-align: center;}",".accordion {color: black; background-color: white; border-radius: 15px; padding-left: 10px; border: 1.5px solid #ebb240; margin-bottom: 25px;}",".accordion-group {background: rgb(178, 97, 56); background: linear-gradient( 107deg, rgba(178, 97, 56, 1) 75%, rgba(230, 215, 206, 1) 95% );}"],"settings":{"width":"wrapper","columns":"2","bg_color":"","color":"#fff9ed","border_color":"","padding_top":50,"padding_bottom":50}},"section_divider_dFP7Hm":{"type":"section-divider","settings":{"show_line":false,"width":"wrapper--full-padded","border_color":"","bg_color":"","padding_top":20,"padding_bottom":20}},"section_accordion_group_RJdUNq":{"type":"section-accordion-group","blocks":{"heading_qyR43c":{"type":"heading","settings":{"title":"FAQ"}},"question_TkjDBf":{"type":"question","settings":{"default_open":false,"title":"Dosage","content":"<p>1 to 2 capsules once daily, before or after meals.<\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_H6DPqm":{"type":"question","settings":{"default_open":false,"title":"Warning","content":"<p>Caution is advised to those allergic to yeast or hypersensitive to any other ingredients of this product. <br\/> <br\/>Please consult your pharmacist\/doctor if symptoms persist or worsen. <br\/> <br\/>As the use of Ginkgo may increase the tendency of bleesing, please consult your pharmacist\/dcotor if you are on or intend to start using any other medicines and before you undergo any surgical\/dental procedure. <br\/> <br\/>Contraindicated in pregnant women. Insufficient reliable data in breastfeeding women.<\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_JamnNe":{"type":"question","settings":{"default_open":false,"title":"Why use","content":"<p>Each 520mg capsule contains patented Rafuma leaves extract and Kanna leaves extract, Brewer Yeast and our Flagship Activated Ginkgo. <br\/> <br\/>Each tablet is manufactured under strict Goods Manufacturing Practice (GMP) and in-house quality control.<\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}},"question_TEeq7J":{"type":"question","settings":{"default_open":false,"title":"The Thomson difference","content":"<p>Trusted Since 1987<br\/><br\/>At Thomson, we combine decades of expertise with cutting-edge research to create supplements that meet the highest standards of efficacy and quality. Our values drive us to provide products that we proudly stand behind.<\/p>","show_icon":false,"icon_name":"icon-award","icon_size":20,"icon_color":"#545454"}}},"block_order":["heading_qyR43c","question_TkjDBf","question_H6DPqm","question_JamnNe","question_TEeq7J"],"custom_css":[".accordion__heading:first-child {display: none;}",".accordion__title {font-size: 25px;}"],"settings":{"width":"wrapper","columns":"1","bg_color":"","color":"","border_color":"","padding_top":50,"padding_bottom":50}},"1715867684110558f5":{"type":"apps","blocks":{"judge_me_reviews_review_widget_gFnLMd":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_review_widget_gFnLMd"],"settings":{"include_margins":false}},"section_collection_HNPrGt":{"type":"section-collection","custom_css":[".product-item--centered .product-information {background: rgb(178, 97, 56); background: linear-gradient( 107deg, rgba(178, 97, 56, 1) 75%, rgba(230, 215, 206, 1) 95% ); color: #ffffff; border-radius: 0px 0px 10px 10px;}",".product-item {background-color: transparent; margin: 20px; border-radius: 10px;}",".product-item__title {color: #ffffff;}",".product-information .price {color: #ffffff !important;}",".product-item__image {border: 1.5px solid #ebb240; border-radius: 10px 10px 0px 0px;}"],"settings":{"heading":"Also Purchased with","description":"","layout":"center","link_text":"","link_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--outline","show_arrow":false,"featured_collection":"papw-calmilax","layout_desktop":"grid","grid":2,"rows":3,"width":"wrapper","layout_mobile":"slider","bg_color":"#fffcfa","color":"","padding_top":41,"padding_bottom":50}},"section_custom_content_DLYLdY":{"type":"section-custom-content","blocks":{"text_xWU9fD":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"You maybe also wondering","heading_size":6,"text":"","text_size":4,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-center","bg_color":"","color":""}}},"block_order":["text_xWU9fD"],"disabled":true,"settings":{"height":"screen-height-one-half","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full-padded","borders":false,"gutters":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"tdg_accordions_calmilax_8MKnH8":{"type":"tdg-accordions-calmilax","disabled":true,"settings":{}},"section_hero_L7XLiL":{"type":"section-hero","blocks":{"heading_xR8xrr":{"type":"heading","settings":{"title":"","heading_size":11}},"text_ne4YqD":{"type":"text","settings":{"description":"At Thomson, \nwe strive to bring you the best,\nbecause we believe your health deserve the best","text_size":6,"text_style":"font-heading"}},"button_rCHb96":{"type":"button","settings":{"link_text":"Shop Other Products","link":"shopify:\/\/collections\/all","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_xR8xrr","text_ne4YqD","button_rCHb96"],"custom_css":[".btn--primary.btn--solid {background-color: #b26138; border-radius: 15px; color: #ffffff; border: 2px solid #e6d7ce;}"],"settings":{"height":"screen-height-three-quarters","width":"wrapper--full","image_1":"shopify:\/\/shop_images\/TH_Landing_Page_Livrin_04-17.png","link":"","mobile_height":"screen-height-three-quarters--mobile","flex_align_desktop":"align--middle-left-desktop","flex_align_mobile":"align--middle-center-mobile","overlay_opacity":20,"overlay_color":"#dcc9bb","show_overlay_text":false,"bg_color":"","color":"#212121","show_placeholder":true}}},"order":["main","section_custom_content_ac73aF","section_divider_wfEUMb","tdg_certificates_K3U6MM","tdg_accordion_key_elements_jQiane","section_divider_dFP7Hm","section_accordion_group_RJdUNq","1715867684110558f5","section_collection_HNPrGt","section_custom_content_DLYLdY","tdg_accordions_calmilax_8MKnH8","section_hero_L7XLiL"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1741164595c8f214ef": {
+      "type": "apps",
+      "blocks": {
+        "rock_sticky_add_to_cart_app_block_BKkiRj": {
+          "type": "shopify://apps/rock-sticky-add-to-cart/blocks/app-block/f9d33820-d310-4252-8c18-a4e912d7bee1",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "rock_sticky_add_to_cart_app_block_BKkiRj"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "text_gyJzXc": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "breadcrumb",
+            "text_size": 6,
+            "padding_bottom": 8
+          }
+        },
+        "text_YeiRnP": {
+          "type": "text",
+          "settings": {
+            "title": "Traditionally used for difficulty in sleeping",
+            "text": "",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 16
+          }
+        },
+        "judge_me_reviews_preview_badge_LgCTDt": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "text_WCPVmH": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p><em>Always read the label and follow the directions for use. Read the warnings below before purchase.</em></p>",
+            "layout": "left",
+            "padding_bottom": 16
+          }
+        },
+        "divider_FMmF9b": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 20
+          }
+        },
+        "inventory_countdown_hUEHjP": {
+          "type": "inventory_countdown",
+          "settings": {
+            "show_notice": "low-inventory",
+            "max_inventory": 10,
+            "hide_inventory_counter": true,
+            "icon_size": 20,
+            "in_stock_color": "#56ad6a",
+            "low_stock_color": "#f79554",
+            "out_of_stock_color": "#721c24",
+            "padding_bottom": 16
+          }
+        },
+        "icon_Rndzkh": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "image": "shopify://shop_images/check-icon2.svg",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Item in Stock",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_payment_button": true,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "code_FX7FRH": {
+          "type": "code",
+          "settings": {
+            "code": "<div style=\"text-align:center\">\n    <p style=\"font-size:20px\">We Accept:</p>\n    <ul class=\"supporting-menu__payment payment-icons inline-list\" style=\"display: flex; justify-content: center; list-style-type: none; padding: 0;\">\n   <li><svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<path fill=\"#1565C0\" d=\"M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z\"></path><path fill=\"#FFF\" d=\"M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z\"></path><path fill=\"#FFC107\" d=\"M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z\"></path>\n</svg></li>     \n\n<li>\n<svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<path fill=\"#3F51B5\" d=\"M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z\"></path><path fill=\"#FFC107\" d=\"M30 14A10 10 0 1 0 30 34A10 10 0 1 0 30 14Z\"></path><path fill=\"#FF3D00\" d=\"M22.014,30c-0.464-0.617-0.863-1.284-1.176-2h5.325c0.278-0.636,0.496-1.304,0.637-2h-6.598C20.07,25.354,20,24.686,20,24h7c0-0.686-0.07-1.354-0.201-2h-6.598c0.142-0.696,0.359-1.364,0.637-2h5.325c-0.313-0.716-0.711-1.383-1.176-2h-2.973c0.437-0.58,0.93-1.122,1.481-1.595C21.747,14.909,19.481,14,17,14c-5.523,0-10,4.477-10,10s4.477,10,10,10c3.269,0,6.162-1.575,7.986-4H22.014z\"></path>\n</svg>\n</li>\n\n<li><svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"40\" height=\"40\" viewBox=\"0 0 48 48\">\n<linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1\" x1=\"2.234\" x2=\"13.54\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#f44f5a\"></stop><stop offset=\".443\" stop-color=\"#ee3d4a\"></stop><stop offset=\"1\" stop-color=\"#e52030\"></stop></linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Ka_iY9a3migtW0L_gr1)\" d=\"M10,9h11.585c1.617,0,2.623,1.362,2.246,3.039l-5.394,23.927 c-0.381,1.671-2,3.034-3.618,3.034H3.235c-1.369-0.001-2.302-0.98-2.325-2.296c-0.004-0.237,0.021-0.484,0.079-0.739l5.396-23.927 C6.762,10.362,8.381,9,10,9\"></path><linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2\" x1=\"13.128\" x2=\"26.645\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#0077d2\"></stop><stop offset=\"1\" stop-color=\"#0b59a2\"></stop></linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Kb_iY9a3migtW0L_gr2)\" d=\"M20.5,9h13.47c1.657,0,0.91,1.362,0.52,3.039l-5.527,23.928 C28.575,37.637,28.696,39,27.035,39H13.38c-1.39,0-2.336-0.955-2.379-2.246c-0.008-0.251,0.018-0.516,0.081-0.788l5.711-23.928 C17.187,10.362,18.657,9,20.316,9\"></path><linearGradient id=\"Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3\" x1=\"24\" x2=\"47\" y1=\"24\" y2=\"24\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#37c6d0\"></stop><stop offset=\"1\" stop-color=\"#1a9ba1\"></stop></linearGradient><path fill=\"url(#Pc7gKrZO_wAWI2QBTIN8Kc_iY9a3migtW0L_gr3)\" d=\"M33.273,9h11.401c1.183,0,2.039,0.727,2.266,1.773c0.044,0.204,0.064,0.42,0.059,0.645 c-0.005,0.2-0.031,0.408-0.079,0.62l-5.393,23.928C41.146,37.637,39.525,39,37.906,39h-11.58c-1.355,0-2.279-0.953-2.324-2.241 c-0.009-0.253,0.016-0.518,0.078-0.792l5.578-23.928C30.036,10.362,31.653,9,33.273,9z\"></path><path fill=\"#fefefe\" d=\"M19.364,18.117c-0.325-0.195-0.905-0.134-1.302,0.135c-0.396,0.263-0.45,0.636-0.126,0.833\tc0.319,0.189,0.902,0.134,1.296-0.137C19.626,18.68,19.685,18.31,19.364,18.117z M42.308,19.376l-1.171,2.048L40.874,19l-1.24,0.294\tl0.454,3.963l-1.415,2.293c-0.038,0.054-0.072,0.091-0.119,0.107c-0.052,0.025-0.118,0.03-0.21,0.03h-0.04L38,26.624l0.75,0.001\tc0.53-0.002,0.904-0.288,1.092-0.625L44,19L42.308,19.376z M22.157,25l-0.404,0.701C21.666,25.854,21.518,26,21.19,26h-0.201\tl-0.282,0.875h0.668c0.787,0,1.158-0.431,1.158-0.431h2.086l0.301-0.933h-1.752l0.28-0.51L22.157,25z M10.416,19.885\tc-0.194,0.75-0.341,1.24-0.679,1.585c-0.233,0.238-0.593,0.351-0.923,0.35c-0.493,0-0.91-0.311-0.883-0.823\tc0.002-0.038,0.007-0.078,0.014-0.119C8.187,19.531,9.242,16,9.242,16H7.275l-1.02,4.03c0,0-0.25,0.968-0.255,1.379\tc-0.004,0.313,0.047,0.569,0.164,0.785C6.54,22.879,7.652,23,8.288,23c1.088,0,1.731-0.104,2.257-0.424\tc0.839-0.51,1.082-1.2,1.341-2.175C12.178,19.305,13,16,13,16h-1.595C11.405,16,10.417,19.883,10.416,19.885z M13.701,23\tl0.705-2.869C14.559,20.065,14.709,20,14.851,20c0.338,0,0.414,0.281,0.397,0.393C15.234,20.529,14.658,23,14.658,23h1.404\tl0.491-2.068c0.204-0.764,0.307-1.152,0.177-1.468C16.594,19.111,16.246,19,15.924,19c-0.21,0-0.596,0.073-0.946,0.234\tc-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L12.25,23H13.701z M25.576,23l0.705-2.869\tC26.434,20.065,26.584,20,26.726,20c0.338,0,0.414,0.281,0.397,0.393C27.109,20.529,26.533,23,26.533,23h1.404l0.491-2.068\tc0.204-0.764,0.307-1.152,0.177-1.468C28.469,19.111,28.121,19,27.799,19c-0.21,0-0.596,0.073-0.946,0.234\tc-0.127,0.061-0.247,0.132-0.374,0.202l0.103-0.438l-1.493,0.234L24.125,23H25.576z M17,23h1.451l0.75-3l-1.486,0.22L17,23z M35.424,16.62c-0.414-0.603-1.269-0.615-2.257-0.62c-0.001,0-0.727,0-0.727,0h-1.614L29,23h1.579l0.665-2.5h0.294\tc1.007,0,1.972-0.014,2.809-0.618c0.585-0.426,1.033-0.992,1.228-1.757c0.05-0.187,0.09-0.41,0.096-0.633\tC35.678,17.199,35.588,16.847,35.424,16.62z M33.742,18.19c-0.115,0.467-0.428,0.86-0.822,1.049\tc-0.324,0.16-0.721,0.137-1.125,0.136h-0.252L32.175,17c0.142,0,0.38,0,0.62,0c0.75,0,0.988,0.477,0.986,0.875\tC33.781,17.978,33.768,18.084,33.742,18.19z M28.47,29c0,0-0.075,0.219-0.099,0.293c-0.02,0.063-0.1,0.207-0.327,0.207h-0.419V29\tH26.5v2.5c-0.007,0.183,0.179,0.5,0.998,0.5h0.932l0.286-0.876l-0.84,0.001c-0.25,0-0.245-0.116-0.248-0.3\tc-0.003-0.2-0.003-0.575-0.003-0.575h0.794c0.73,0,0.89-0.606,0.946-0.787L29.474,29H28.47z\"></path><path fill=\"#fefefe\" d=\"M28.824,25c-1.502,0-1.795,0.67-1.795,0.67L27.235,25h-1.21l-1.979,6.083\tc-0.021,0.07-0.048,0.18-0.046,0.299C24.006,31.664,24.174,32,24.964,32l0.718-0.001L26.002,31c0,0-0.36,0-0.485,0\tc-0.157,0-0.125-0.13-0.125-0.13l0.709-2.152h1.778c1.47,0,1.743-0.9,1.875-1.31L30.538,25C30.538,25,29.369,25,28.824,25z M28.298,28h-2.001l0.206-0.604h2.005L28.298,28z M28.822,26.518c0,0-1.012-0.01-1.175,0.02c-0.717,0.124-1.018,0.508-1.018,0.508\tL26.967,26h2.023L28.822,26.518z M37.507,19.234c0,0-0.01,0.04-0.028,0.111C37.325,19.179,37.07,19,36.668,19\tc-0.5,0-0.937,0.179-1.45,0.617c-0.451,0.39-0.677,0.926-0.811,1.439c-0.052,0.19-0.083,0.491-0.083,0.694\tc0,1.25,1.082,1.25,1.345,1.25c0.395,0,0.71-0.151,0.965-0.347C36.602,22.776,36.543,23,36.543,23h1.451L39,19L37.507,19.234z M36.098,22.116c-0.063,0-0.438,0-0.429-0.411c0.004-0.203,0.052-0.43,0.125-0.691c0.17-0.608,0.399-1.139,1-1.139\tc0.47,0,0.461,0.377,0.26,1.133c-0.058,0.217-0.221,0.609-0.348,0.8C36.521,22.086,36.31,22.116,36.098,22.116z M23.768,19.493\tC23.471,19.12,22.93,19.001,22.366,19c-0.339,0-1.149,0.031-1.796,0.579c-0.465,0.396-0.69,0.934-0.831,1.449\tc-0.142,0.525-0.316,1.471,0.596,1.824C20.616,22.968,21.025,23,21.29,23c0.675,0.001,1.372-0.174,1.908-0.695\tc0.413-0.422,0.614-1.051,0.685-1.31C24.114,20.138,23.964,19.737,23.768,19.493z M21.429,22.115c-0.063,0-0.438,0-0.429-0.411\tc0.004-0.203,0.06-0.471,0.125-0.691c0.169-0.572,0.4-1.139,1-1.139c0.47,0,0.461,0.377,0.26,1.133\tc-0.058,0.217-0.221,0.609-0.348,0.8C21.852,22.086,21.641,22.116,21.429,22.115z M20.847,27.115L20.556,28h0.846l-0.248,0.769\th-0.848L20,29.706h0.845l-0.536,1.639c-0.072,0.217-0.075,0.654,0.738,0.654h1.627L23,31c0,0-0.931,0-1.181,0\ts-0.183-0.177-0.183-0.177l0.368-1.132h1.746l0.302-0.921h-1.747L22.56,28h1.713l0.297-0.885H20.847z M39.7,27.916L40,27h-4.037\tl-0.294,0.916h1.211l-0.247,0.743h-1.232l-0.263,0.812h1.082l-0.963,1.265C35.18,30.847,35.017,31,34.749,31h-0.486l0.095-0.289\tH33.94L35.479,26h0.547l0.172-0.518c0,0,0,0.381,0,0.517c0,0.434,0.125,0.626,0.821,0.626h0.478L37.8,25.69h-0.223\tc-0.147,0.003-0.217-0.044-0.205-0.138V25c0,0-0.799,0-1.25,0c-1.175,0-1.903,0.055-2.193,0.132\tc-0.351,0.09-0.807,0.357-0.807,0.357L33.279,25H31.98l-1.862,5.722h-0.28L29.52,31.69h2.874L32.293,32h1.229l0.1-0.31h0.402\tL33.919,32h1.02c0.259,0,0.468-0.058,0.642-0.155c0.182-0.101,0.325-0.244,0.447-0.407l0.756-1.006l0.115,1.055\tC36.928,31.679,37.002,32,37.791,32h0.568l0.329-1h-0.371c-0.265,0-0.322-0.195-0.337-0.297l-0.132-1.024h-0.615l0.25-0.208h1.703\tl0.268-0.812h-1.585l0.251-0.743L39.7,27.916z M32.964,26h1.303l-0.278,0.853c0,0-0.462,0.028-0.693,0.08\tc-0.393,0.09-0.72,0.248-0.72,0.248L32.964,26z M32.729,30.722h-1.306l0.347-1.064h1.303L32.729,30.722z M33.408,28.622\tc0,0-0.346,0.043-0.574,0.095C32.435,28.832,31.979,29,31.979,29l0.4-1.218h1.308L33.408,28.622z\"></path>\n</svg></li>\n\n<li><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"40\" height=\"40\" viewBox=\"0 0 256 256\" xml:space=\"preserve\">\n\n<defs>\n</defs>\n<g style=\"stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;\" transform=\"translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)\" >\n\t<path d=\"M 84.259 16.068 H 5.741 C 2.57 16.068 0 18.638 0 21.809 v 6.131 v 2 V 60.06 v 2 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 78.518 c 3.171 0 5.741 -2.57 5.741 -5.741 V 62.06 v -2 V 29.94 v -2 v -6.131 C 90 18.638 87.43 16.068 84.259 16.068 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(240,240,240); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<path d=\"M 4 68.191 V 62.06 v -2 V 29.94 v -2 v -6.131 c 0 -3.171 2.57 -5.741 5.741 -5.741 h -4 C 2.57 16.068 0 18.638 0 21.809 v 6.131 V 62.06 v 6.131 c 0 3.171 2.57 5.741 5.741 5.741 h 4 C 6.57 73.932 4 71.362 4 68.191 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(212,212,212); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<linearGradient id=\"SVGID_2\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)\"  x1=\"46.9911\" y1=\"49.5863\" x2=\"55.2245\" y2=\"49.5863\">\n<stop offset=\"0%\" style=\"stop-color:rgb(0,121,64);stop-opacity: 1\"/>\n<stop offset=\"22.85%\" style=\"stop-color:rgb(0,135,63);stop-opacity: 1\"/>\n<stop offset=\"74.33%\" style=\"stop-color:rgb(64,167,55);stop-opacity: 1\"/>\n<stop offset=\"100%\" style=\"stop-color:rgb(92,181,49);stop-opacity: 1\"/>\n</linearGradient>\n<path d=\"M 58.836 49.393 h 3.942 c 0.113 0 0.375 -0.038 0.488 -0.038 c 0.751 -0.15 1.389 -0.826 1.389 -1.765 c 0 -0.901 -0.638 -1.577 -1.389 -1.765 c -0.113 -0.038 -0.338 -0.038 -0.488 -0.038 h -3.942 V 49.393 L 58.836 49.393 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_2); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<path d=\"M 62.327 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 7.096 h 9.649 c 0.225 0 0.488 0 0.676 0.038 c 2.178 0.113 3.792 1.239 3.792 3.191 c 0 1.539 -1.089 2.853 -3.116 3.116 v 0.075 C 68.71 45 70.4 46.239 70.4 48.154 c 0 2.065 -1.877 3.417 -4.355 3.417 H 55.457 v 13.892 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 62.327 24.5 L 62.327 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(41,156,60); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<linearGradient id=\"SVGID_3\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"matrix(2.0492 0 0 -2.0492 -40.8065 149.2031)\"  x1=\"46.9908\" y1=\"52.2613\" x2=\"55.2246\" y2=\"52.2613\">\n<stop offset=\"0%\" style=\"stop-color:rgb(0,121,64);stop-opacity: 1\"/>\n<stop offset=\"22.85%\" style=\"stop-color:rgb(0,135,63);stop-opacity: 1\"/>\n<stop offset=\"74.33%\" style=\"stop-color:rgb(64,167,55);stop-opacity: 1\"/>\n<stop offset=\"100%\" style=\"stop-color:rgb(92,181,49);stop-opacity: 1\"/>\n</linearGradient>\n<path d=\"M 64.167 42.109 c 0 -0.901 -0.638 -1.502 -1.389 -1.614 c -0.075 0 -0.263 -0.038 -0.375 -0.038 h -3.567 v 3.304 h 3.567 c 0.113 0 0.338 0 0.375 -0.038 C 63.529 43.611 64.167 43.01 64.167 42.109 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: url(#SVGID_3); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<path d=\"M 24.556 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 16.858 c 1.915 0.939 3.905 1.539 5.895 1.539 c 2.365 0 3.642 -1.427 3.642 -3.379 v -7.96 h 5.857 v 7.922 c 0 3.079 -1.915 5.594 -8.41 5.594 c -3.942 0 -7.021 -0.864 -7.021 -0.864 v 14.38 H 27.71 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 24.556 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(5,83,154); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n\t<path d=\"M 43.442 24.5 c -3.755 0 -6.833 3.041 -6.833 6.833 v 8.936 c 1.727 -1.464 4.731 -2.403 9.574 -2.178 c 2.591 0.113 5.369 0.826 5.369 0.826 v 2.891 c -1.389 -0.713 -3.041 -1.352 -5.181 -1.502 c -3.679 -0.263 -5.895 1.539 -5.895 4.693 c 0 3.191 2.215 4.994 5.895 4.693 c 2.14 -0.15 3.792 -0.826 5.181 -1.502 v 2.891 c 0 0 -2.741 0.713 -5.369 0.826 c -4.843 0.225 -7.847 -0.713 -9.574 -2.178 V 65.5 h 10.025 c 3.755 0 6.833 -3.041 6.833 -6.833 V 24.5 L 43.442 24.5 z\" style=\"stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(192,23,50); fill-rule: nonzero; opacity: 1;\" transform=\" matrix(1 0 0 1 0 0) \" stroke-linecap=\"round\" />\n</g>\n</svg></li>\n    </ul>\n</div>",
+            "padding_bottom": 16
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_description": true,
+            "show_read_more": false,
+            "title_1": "Ingredients",
+            "raw_content_1": "<p>Each 520mg Tablet contains patented Rafuma leaves extract and Kanna leaves extract, Brewer Yeast and our Flagship Activated Ginkgo.</p>",
+            "title_2": "Health Benefits",
+            "raw_content_2": "<p>Promote restful sleep using only natural ingredients.</p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "divider_1": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_gyJzXc",
+        "title",
+        "text_YeiRnP",
+        "price",
+        "judge_me_reviews_preview_badge_LgCTDt",
+        "variants",
+        "text_WCPVmH",
+        "divider_FMmF9b",
+        "inventory_countdown_hUEHjP",
+        "icon_Rndzkh",
+        "buttons",
+        "code_FX7FRH",
+        "tabs",
+        "divider_1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "product_sticky_enable": false,
+        "variant_image_scroll": true,
+        "image_layout": "thumbnails",
+        "image_size": "normal",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_style": "thumbs",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "section_custom_content_ac73aF": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_gzYNVr": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Overview",
+            "heading_size": 7,
+            "text": "",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-center",
+            "bg_color": "",
+            "color": ""
+          }
+        },
+        "text_iPm4aM": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "",
+            "heading_size": 7,
+            "text": "<p>To help improve sleep quality, Thomson CalmiLax combines the benefits of Rafuma leaf extract, Kanna leaf extract, our patented Ginkgo biloba, and Nutritional Brewer Yeast. This unique formulation is vegetarian-friendly and made from natural, plant-based ingredients.</p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_gzYNVr",
+        "text_iPm4aM"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_wfEUMb": {
+      "type": "section-divider",
+      "custom_css": [],
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--narrow",
+        "border_color": "#e6d7ce",
+        "bg_color": "",
+        "padding_top": 16,
+        "padding_bottom": 12
+      }
+    },
+    "tdg_certificates_K3U6MM": {
+      "type": "tdg-certificates",
+      "settings": {}
+    },
+    "tdg_accordion_key_elements_jQiane": {
+      "type": "tdg-accordion-key-elements",
+      "blocks": {
+        "heading_A6rGQJ": {
+          "type": "heading",
+          "settings": {
+            "title": "Active Ingredients Per Tablet"
+          }
+        },
+        "question_Kdq6p7": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Kanna Aeriel Extract",
+            "subtitle": "<p>12 mg</p>",
+            "content": "",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_LHWJjQ": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Patented Rafuma Leaves Extract",
+            "subtitle": "<p><strong>25</strong> mg</p>",
+            "content": "<p> </p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_QN476h": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Ginkgo Biloba Leaves Extract",
+            "subtitle": "<p><strong>10</strong> mg</p>",
+            "content": "",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_Betmii": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Flagship Activated Ginkgo Biloba Extract",
+            "subtitle": "<p><strong>10 mg</strong></p>",
+            "content": "<p> </p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_9za3xU": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Patented Kanna aeriel extract",
+            "subtitle": "<p><strong>12 mg</strong></p>",
+            "content": "<p> </p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_yRCEVT": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Brewer Yeast",
+            "subtitle": "<p><strong>12 mg</strong></p>",
+            "content": "<p> </p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "heading_A6rGQJ",
+        "question_Kdq6p7",
+        "question_LHWJjQ",
+        "question_QN476h",
+        "question_Betmii",
+        "question_9za3xU",
+        "question_yRCEVT"
+      ],
+      "custom_css": [
+        ".accordion__heading:first-child {text-align: center;}",
+        ".accordion {color: black; background-color: white; border-radius: 15px; padding-left: 10px; border: 1.5px solid #ebb240; margin-bottom: 25px;}",
+        ".accordion-group {background: rgb(178, 97, 56); background: linear-gradient( 107deg, rgba(178, 97, 56, 1) 75%, rgba(230, 215, 206, 1) 95% );}"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "columns": "2",
+        "bg_color": "",
+        "color": "#fff9ed",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_divider_dFP7Hm": {
+      "type": "section-divider",
+      "settings": {
+        "show_line": false,
+        "width": "wrapper--full-padded",
+        "border_color": "",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_accordion_group_RJdUNq": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_qyR43c": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_TkjDBf": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Dosage",
+            "content": "<p>1 to 2 capsules once daily, before or after meals.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_H6DPqm": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Warning",
+            "content": "<p>Caution is advised to those allergic to yeast or hypersensitive to any other ingredients of this product. <br/> <br/>Please consult your pharmacist/doctor if symptoms persist or worsen. <br/> <br/>As the use of Ginkgo may increase the tendency of bleesing, please consult your pharmacist/dcotor if you are on or intend to start using any other medicines and before you undergo any surgical/dental procedure. <br/> <br/>Contraindicated in pregnant women. Insufficient reliable data in breastfeeding women.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_JamnNe": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Why use",
+            "content": "<p>Each 520mg capsule contains patented Rafuma leaves extract and Kanna leaves extract, Brewer Yeast and our Flagship Activated Ginkgo. <br/> <br/>Each tablet is manufactured under strict Goods Manufacturing Practice (GMP) and in-house quality control.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_TEeq7J": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "The Thomson difference",
+            "content": "<p>Trusted Since 1987<br/><br/>At Thomson, we combine decades of expertise with cutting-edge research to create supplements that meet the highest standards of efficacy and quality. Our values drive us to provide products that we proudly stand behind.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qyR43c",
+        "question_TkjDBf",
+        "question_H6DPqm",
+        "question_JamnNe",
+        "question_TEeq7J"
+      ],
+      "custom_css": [
+        ".accordion__heading:first-child {display: none;}",
+        ".accordion__title {font-size: 25px;}"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "columns": "1",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "1715867684110558f5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_gFnLMd": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_gFnLMd"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "section_collection_HNPrGt": {
+      "type": "section-collection",
+      "custom_css": [
+        ".product-item--centered .product-information {background: rgb(178, 97, 56); background: linear-gradient( 107deg, rgba(178, 97, 56, 1) 75%, rgba(230, 215, 206, 1) 95% ); color: #ffffff; border-radius: 0px 0px 10px 10px;}",
+        ".product-item {background-color: transparent; margin: 20px; border-radius: 10px;}",
+        ".product-item__title {color: #ffffff;}",
+        ".product-information .price {color: #ffffff !important;}",
+        ".product-item__image {border: 1.5px solid #ebb240; border-radius: 10px 10px 0px 0px;}"
+      ],
+      "settings": {
+        "heading": "Also Purchased with",
+        "description": "",
+        "layout": "center",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--outline",
+        "show_arrow": false,
+        "featured_collection": "papw-calmilax",
+        "layout_desktop": "grid",
+        "grid": 2,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "bg_color": "#fffcfa",
+        "color": "",
+        "padding_top": 41,
+        "padding_bottom": 50
+      }
+    },
+    "section_custom_content_DLYLdY": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_xWU9fD": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "You maybe also wondering",
+            "heading_size": 6,
+            "text": "",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-center",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xWU9fD"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tdg_accordions_calmilax_8MKnH8": {
+      "type": "tdg-accordions-calmilax",
+      "disabled": true,
+      "settings": {}
+    },
+    "section_hero_L7XLiL": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_xR8xrr": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_size": 11
+          }
+        },
+        "text_ne4YqD": {
+          "type": "text",
+          "settings": {
+            "description": "At Thomson, \nwe strive to bring you the best,\nbecause we believe your health deserve the best",
+            "text_size": 6,
+            "text_style": "font-heading"
+          }
+        },
+        "button_rCHb96": {
+          "type": "button",
+          "settings": {
+            "link_text": "Shop Other Products",
+            "link": "shopify://collections/all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xR8xrr",
+        "text_ne4YqD",
+        "button_rCHb96"
+      ],
+      "custom_css": [
+        ".btn--primary.btn--solid {background-color: #b26138; border-radius: 15px; color: #ffffff; border: 2px solid #e6d7ce;}"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify://shop_images/TH_Landing_Page_Livrin_04-17.png",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 20,
+        "overlay_color": "#dcc9bb",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#212121",
+        "show_placeholder": true
+      }
+    }
+  },
+  "order": [
+    "1741164595c8f214ef",
+    "main",
+    "section_custom_content_ac73aF",
+    "section_divider_wfEUMb",
+    "tdg_certificates_K3U6MM",
+    "tdg_accordion_key_elements_jQiane",
+    "section_divider_dFP7Hm",
+    "section_accordion_group_RJdUNq",
+    "1715867684110558f5",
+    "section_collection_HNPrGt",
+    "section_custom_content_DLYLdY",
+    "tdg_accordions_calmilax_8MKnH8",
+    "section_hero_L7XLiL"
+  ]
+}
