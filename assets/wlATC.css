@@ -6,7 +6,7 @@
     font-size: 14px;
 }
 
-@media (max-width: 70em) {
+@media (max-width: 1200px) {
   .xyz-rock {
       display: none !important;
   }
