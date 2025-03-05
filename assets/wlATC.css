@@ -4,9 +4,10 @@
     margin-right: 16px;
     color: white;
     font-size: 14px;
+    text-wrap: auto;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 900px) {
   .xyz-rock {
       display: none !important;
   }
