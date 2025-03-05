@@ -22,6 +22,19 @@
 {% endif %}
 <!-- Add more conditions here for every product -->
 
+<script>
+  (function() {
+    const intervalATCMessage = setInterval(() => {
+      if(document.querySelector('.xyz-rock') === null) {
+        return;
+      }
+      document.querySelector('.xyz-rock').children[0].style.transform = "translateY(66px)";
+      clearInterval(intervalATCMessage);
+      return;
+    }, 500)
+  })();
+</script>
+
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
   assign enable_video_looping = section.settings.enable_video_looping
