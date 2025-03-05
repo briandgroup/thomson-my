@@ -470,6 +470,7 @@
     </div>
 
     {%- if section.settings.enable_search -%}
+      {% comment %}
       <div class="header__mobile__button{% if settings.type_nav_caps %} caps{% endif %}">
         <header-search-popdown>
           <details>
@@ -485,6 +486,8 @@
           </details>
         </header-search-popdown>
       </div>
+      {% endcomment %}
+      {% render 'WLCustomSearch', input_id: 'Search-In-Modal', device: 'desktop' %}
     {%- endif -%}
   </div>
 
