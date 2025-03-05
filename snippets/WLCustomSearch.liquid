@@ -1,0 +1,84 @@
+{% assign predictive_search_height = 500 %}
+{% assign search_box_width = 350 %}
+
+<div class="WLCustomSearch WLCustomSearch--{{ device }}">
+  {%- if settings.predictive_search_enabled -%}
+    <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+  {%- else -%}
+    <search-form class="search-modal__form">
+  {%- endif -%}
+  <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+    <div class="">
+      <input
+        type="search"
+        id="SearchInput--{{ unique }}"
+        data-predictive-search-input="search-popdown-results"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'general.search.search' | t }}"
+        role="combobox"
+        aria-label="{{ 'general.search.placeholder' | t }}"
+        aria-owns="predictive-search-results"
+        aria-controls="predictive-search-results"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-autocomplete="list"
+        autocorrect="off"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+      >
+      <input type="hidden" name="options[prefix]" value="last">
+      <button
+         style="display:none;visibility:hidden"
+        type="reset"
+        class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
+        aria-label="{{ 'general.search.reset' | t }}"
+      >
+        {{- 'general.search.clear' | t -}}
+      </button>
+      <button style="display:none;visibility:hidden" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+        {%- render 'icon-search' -%}
+      </button>
+    </div>
+
+    {%- if settings.predictive_search_enabled -%}
+      <div class="predictive-search" tabindex="-1" data-predictive-search-results data-scroll-lock-scrollable>
+        <div class="predictive-search__loading-state">
+          <div class="predictive-search__loader loader"><div class="loader-indeterminate"></div></div>
+        </div>
+      </div>
+
+      <span
+        class="predictive-search-status visually-hidden"
+        role="status"
+        aria-hidden="true"
+        data-predictive-search-status
+      ></span>
+    {%- endif -%}
+  </form>
+  {%- if settings.predictive_search_enabled -%}
+    </predictive-search>
+  {%- else -%}
+    </search-form>
+  {%- endif -%}
+</div>
+
+<style>
+  .WLCustomSearch {
+    display: block;
+  }
+  .search-modal__form,
+  .search-modal__form > * {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .predictive-search {
+    max-height: {{ predictive_search_height }}px !important;
+  }
+
+  .predictive-search__results-groups-wrapper {
+    flex-direction: column !important;
+  }
+</style>
