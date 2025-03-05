@@ -379,14 +379,14 @@ defer>
 </script> -->
 
 <style>
-  .slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
+  .slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
 }
-@-webkit-keyframes slideInUp {
+@-webkit-keyframes slideInRight {
   0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
   to {
@@ -394,41 +394,15 @@ defer>
     transform: translateZ(0);
   }
 }
-@keyframes slideInUp {
+@keyframes slideInRight {
   0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
   to {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-  }
-}
-.slideInUp {
-  -webkit-animation-name: slideInUp;
-  animation-name: slideInUp;
-}
-@-webkit-keyframes slideOutDown {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-@keyframes slideOutDown {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
   }
 }
 </style>
