@@ -11,15 +11,6 @@
   "sections": {
     "1741164025adecacf7": {
       "type": "apps",
-      "blocks": {
-        "rock_sticky_add_to_cart_app_block_gfeh9J": {
-          "type": "shopify://apps/rock-sticky-add-to-cart/blocks/app-block/f9d33820-d310-4252-8c18-a4e912d7bee1",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "rock_sticky_add_to_cart_app_block_gfeh9J"
-      ],
       "settings": {
         "include_margins": false
       }
