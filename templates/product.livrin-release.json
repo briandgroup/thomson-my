@@ -12,10 +12,6 @@
     "main": {
       "type": "product",
       "blocks": {
-        "rock_sticky_add_to_cart_app_block_pVkyXh": {
-          "type": "shopify://apps/rock-sticky-add-to-cart/blocks/app-block/f9d33820-d310-4252-8c18-a4e912d7bee1",
-          "settings": {}
-        },
         "text_gyJzXc": {
           "type": "text",
           "settings": {
