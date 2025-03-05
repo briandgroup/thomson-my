@@ -3239,6 +3239,8 @@
   border-image: initial;
   overflow: hidden;
   padding: 0 16px;
+  background-color: #004414 !important;
+  color: #ffffff !important;
 }
 
 .rockApp_PC_Preview_Quantity {
