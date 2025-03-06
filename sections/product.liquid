@@ -31,7 +31,6 @@
       if(document.querySelector('.xyz-rock') === null) {
         return;
       }
-      document.querySelector('.xyz-rock').children[0].style.transform = "translateY(66px)";
       document.querySelector('.xyz-rock style').remove();
 
       const rn = document.querySelector(".rockApp_PC_Preview_Quantity");
@@ -41,7 +40,7 @@
       rn.parentNode.insertBefore(pt, rn.nextSibling);
 
       document.querySelector('.rockApp_PCPreviewbutton').classList.remove('shopify-payment-button__button--unbranded');
-      
+
       clearInterval(intervalATCMessage);
       return;
     }, 500)
@@ -1247,7 +1246,7 @@
     }
   </script>
 
-  {%- if show_cart_bar -%}
+  {%- if show_cart_bar == "Rock app in used so this is disabled" -%}
     <!-- /partials/cart-bar.liquid -->
     {%- liquid
       assign current_variant = product.selected_or_first_available_variant
