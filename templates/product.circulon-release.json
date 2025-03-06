@@ -433,7 +433,7 @@
         "show_arrow": false,
         "featured_collection": "papw-circulon-1",
         "layout_desktop": "grid",
-        "grid": 2,
+        "grid": 4,
         "rows": 3,
         "width": "wrapper",
         "layout_mobile": "slider",
