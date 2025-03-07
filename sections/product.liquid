@@ -104,7 +104,7 @@
   assign sibling_color = product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
 
   if section.settings.show_cart_bar
-    assign show_cart_bar = true
+    assign show_cart_bar = false
   endif
 
   capture product_images_classlist
