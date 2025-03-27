@@ -113,11 +113,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/Roadshow_Schedule_Apr_2025-images-0-merged-images-0.jpg",
-        "image_2": "shopify://shop_images/Roadshow_Schedule_Apr_2025-images-0-merged-images-1.jpg",
+        "image_1": "shopify://shop_images/Roadshow_-_April_2025_pages-to-jpg-0001.jpg",
         "link": "",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/Roadshow_Schedule_Apr_2025-images-0-merged-images-0.jpg",
+        "mobile_image": "shopify://shop_images/Roadshow_-_April_2025_pages-to-jpg-0001.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -126,40 +125,6 @@
         "bg_color": "",
         "color": "#ffffff",
         "show_placeholder": true
-      }
-    },
-    "text_promo_HhTaNw": {
-      "type": "text-promo",
-      "blocks": {
-        "button_4bra3d": {
-          "type": "button",
-          "settings": {
-            "button_text": "Download PDF",
-            "button_url": "https://cdn.shopify.com/s/files/1/0601/7866/1427/files/Roadshow_-_August_2024.zip?v=1722928390",
-            "button_type": "btn--secondary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "button_4bra3d"
-      ],
-      "custom_css": [
-        ".btn {border-radius: 15px; color: #ffffff; border: 2px solid #004415;}"
-      ],
-      "settings": {
-        "width": "wrapper--full-padded",
-        "border": false,
-        "bg_color": "",
-        "color": "",
-        "overlay_opacity": 0,
-        "overlay_color": "#000000",
-        "show_overlay_text": false,
-        "inner_padding": 0,
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "section_hero_L7XLiL": {
@@ -223,7 +188,6 @@
     "section_hero_HhJ3Cf",
     "section_multicolumn_7J8kjV",
     "section_hero_x3tNyc",
-    "text_promo_HhTaNw",
     "section_hero_L7XLiL"
   ]
 }
