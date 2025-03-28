@@ -59,7 +59,7 @@
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
             "color": "#ffffff",
-            "first_button_text": "View products",
+            "first_button_text": "",
             "first_button_link": "",
             "first_button_type": "btn--primary",
             "first_button_size": "",
