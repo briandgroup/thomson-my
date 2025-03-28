@@ -107,6 +107,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Banner_-_April_2025_-_Free_Handtowel.png",
+            "mobile_image": "shopify://shop_images/Banner_-_April_2025_-_Free_Handtowel.png",
             "overlay_opacity": 0,
             "overlay_color": "#000",
             "show_overlay_text": false,
