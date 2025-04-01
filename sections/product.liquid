@@ -163,9 +163,11 @@
   }
 {%- endstyle -%}
 
+
+
 <div
   id="Product--{{ unique }}"
-  
+  {% comment %}style="background-image: url({{ product.metafields.custom.wl_product_banner | default: product.featured_media | image_url: width: 5000 }}); background-position: bottom"{% endcomment %}
   class="index-product m-{{ product.id }} section-padding"
   data-section-id="{{ unique }}"
   data-section-type="product"
