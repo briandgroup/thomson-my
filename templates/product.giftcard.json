@@ -454,25 +454,26 @@
     "related": {
       "type": "related",
       "blocks": {
-        "related": {
+        "recent": {
+          "type": "recent",
+          "disabled": true,
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        },
+        "related_33jkqJ": {
           "type": "related",
           "disabled": true,
           "settings": {
             "product_recommendations_heading": "Related products",
             "limit": 4
           }
-        },
-        "recent": {
-          "type": "recent",
-          "settings": {
-            "product_recently_heading": "Recently viewed",
-            "product_recently_limit": 4
-          }
         }
       },
       "block_order": [
-        "related",
-        "recent"
+        "recent",
+        "related_33jkqJ"
       ],
       "settings": {
         "enable_tabs": true,
