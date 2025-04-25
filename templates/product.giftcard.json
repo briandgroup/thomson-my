@@ -141,7 +141,7 @@
       "settings": {
         "product_sticky_enable": true,
         "variant_image_scroll": true,
-        "image_layout": "stacked",
+        "image_layout": "thumbnails",
         "image_size": "normal",
         "show_cart_bar": true,
         "enable_zoom": true,
