@@ -46,8 +46,8 @@
         "image_yTbKq8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Artboard_3_copy_9.jpg",
-            "mobile_image": "shopify://shop_images/Artboard_3_copy_9.jpg",
+            "image": "shopify://shop_images/Banner_-_April_Roadshow.jpg",
+            "mobile_image": "shopify://shop_images/Banner_-_April_Roadshow.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -106,10 +106,10 @@
         "image_pQChiA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_-_April_2025_-_Free_Handtowel.png",
-            "mobile_image": "shopify://shop_images/Banner_-_April_2025_-_Free_Handtowel.png",
+            "image": "shopify://shop_images/Banner_-_April_CalmiLax_Promo.jpg",
+            "mobile_image": "shopify://shop_images/Banner_-_April_CalmiLax_Promo.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "",
             "heading_size": 11,
@@ -118,7 +118,7 @@
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "",
             "first_button_link": "",
             "first_button_type": "btn--primary",
