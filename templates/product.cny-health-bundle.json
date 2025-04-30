@@ -38,7 +38,7 @@
         "text_YeiRnP": {
           "type": "text",
           "settings": {
-            "title": "Gift of Energy, Comfort and Endurance this Chinese New Year",
+            "title": "Gift of Energy, Comfort and Mobility",
             "text": "",
             "layout": "left",
             "padding_bottom": 16
@@ -48,7 +48,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>Each gift box consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson Activated Ginkgo Extract 60s</li><li>Thomson OsteoPro 60s </li><li>Exclusive Thomson Ang Pao </li></ul>",
+            "text": "<p>Each gift set consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson Activated Ginkgo Extract 60s</li><li>Thomson OsteoPro 60s </li></ul>",
             "layout": "left",
             "padding_bottom": 16
           }
