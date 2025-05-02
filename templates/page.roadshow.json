@@ -52,7 +52,7 @@
           "type": "text",
           "settings": {
             "column_width": 90,
-            "title": "April 2025",
+            "title": "May 2025",
             "heading_size": 7,
             "text": "",
             "text_size": 4,
@@ -113,7 +113,7 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/Roadshow_-_April_2025_pages-to-jpg-0001.jpg",
+        "image_1": "shopify://shop_images/Roadshow_Schedule_May_2025.jpg",
         "link": "",
         "mobile_height": "image-height--mobile",
         "mobile_image": "shopify://shop_images/Roadshow_-_April_2025_pages-to-jpg-0001.jpg",
