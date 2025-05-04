@@ -483,6 +483,7 @@
         "recent",
         "related_33jkqJ"
       ],
+      "disabled": true,
       "settings": {
         "enable_tabs": false,
         "heading_alignment": "text-center",
