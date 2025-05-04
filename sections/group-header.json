@@ -67,11 +67,11 @@
           "type": "toolbar",
           "settings": {
             "text": "",
-            "menu": "",
+            "menu": "customer-account-main-menu",
             "show_border": false,
             "border_opacity": 45,
             "show_social_links": false,
-            "show_gift_card": true,
+            "show_gift_card": false,
             "show_locale_selector": true,
             "show_country_selector": true,
             "show_country_name": false,
