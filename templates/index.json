@@ -46,8 +46,8 @@
         "image_yTbKq8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_-_April_Roadshow.jpg",
-            "mobile_image": "shopify://shop_images/Banner_-_April_Roadshow.jpg",
+            "image": "shopify://shop_images/Test_-_May_2025.png",
+            "mobile_image": "shopify://shop_images/Test_-_May_2025.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -106,8 +106,8 @@
         "image_pQChiA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_-_April_CalmiLax_Promo.jpg",
-            "mobile_image": "shopify://shop_images/Banner_-_April_CalmiLax_Promo.jpg",
+            "image": "shopify://shop_images/Free_Mug_-_May_2025.png",
+            "mobile_image": "shopify://shop_images/Free_Mug_-_May_2025.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
