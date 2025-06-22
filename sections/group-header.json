@@ -30,7 +30,7 @@
           "type": "message",
           "disabled": true,
           "settings": {
-            "show_wheel": false,
+            "show_wheel": true,
             "message": "Spend ||amount|| and get free shipping on all orders",
             "target_url_enabled": false,
             "target_url": "",
@@ -46,11 +46,11 @@
         "message_MY9CjE"
       ],
       "settings": {
-        "show_border": false,
+        "show_border": true,
         "layout": "slider",
         "slider_speed": 18,
         "text_alignment": "center",
-        "show_arrows": false,
+        "show_arrows": true,
         "marquee_speed": 50,
         "message_spacing": 45,
         "text_size": 2,
