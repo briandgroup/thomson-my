@@ -360,6 +360,14 @@
   data-section-id="{{ section.id }}"
   data-section-type="announcement"
   style="{{ style }}">
+  <style>
+    div:has(> div#Announcement--{{ section.id }}) { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5800;
+    }
+  </style>
   {%- if show_browser_error -%}
     <div class="announcement__bar announcement__bar--error section-padding">
       <div class="announcement__message">
