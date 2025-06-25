@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>Essential support for working professionals, providing sustained energy throughout the day. </p>",
+            "text": "<p>Trusted support for the entire family's gut health, immunity and metabolic needs. </p>",
             "layout": "left",
             "padding_bottom": 16
           }
@@ -48,7 +48,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>Each gift set consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson Circulon 30s</li></ul>",
+            "text": "<p>Each gift set consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson ProbioGut 30s</li></ul>",
             "layout": "left",
             "padding_bottom": 16
           }
@@ -136,9 +136,9 @@
             "show_description": true,
             "show_read_more": false,
             "title_1": "Ingredients",
-            "raw_content_1": "<h6><strong>Thomson Livrin </strong></h6><p>Each capsule is made of 300mg of highly concentrated Milk Thistle Extract from Europe.</p><h6><br/><strong>Thomson Circulon 125</strong></h6><p>Each tablet is made of 125mg of Ginkgo Biloba extract from Japan, which is equivalent to 6250mg of young Japanese Ginkgo Leaves.</p>",
+            "raw_content_1": "<h6><strong>Thomson Livrin </strong></h6><p>Each capsule is made of 300mg of highly concentrated Milk Thistle Extract from Europe.</p><h6><strong><br/>Thomson ProbioGut</strong></h6><p>Each powder sachet contains two premium Japanese Human Residential Bifidobacteria (Bifidobacterium Longum & Bifidobacterium Breve).Two well-researched prebiotics (HMO & Inulin).No added sugar with Kombucha Berry Flavour.</p>",
             "title_2": "Health Benefits",
-            "raw_content_2": "<h6><strong>Thomson Livrin</strong></h6><p>Maintain health liver and help with symptoms of poor liver health such as;</p><ul><li>Stomach discomfort</li><li>Fatigue</li><li>Dark eye circles<br/></li></ul><h6><strong>Thomson Circulon 125</strong></h6><p>Promote blood circulation and help with symptoms of poor blood circulation such as;</p><ul><li>Dizziness</li><li>Fatigue</li><li>Cold and numb hands and feet</li></ul>",
+            "raw_content_2": "<h6><strong>Thomson Livrin</strong></h6><p>Maintain health liver and help with symptoms of poor liver health such as;</p><ul><li>Stomach discomfort</li><li>Fatigue</li><li>Dark eye circles<br/></li></ul><h6><strong>Thomson ProbioGut</strong></h6><p>Promote good gut health and also offering the following benefit;</p><ul><li>Improve constipation, diarrhea, bloating and gastric</li><li>Relieve allergic reactions</li><li>Strengthen immune response</li><li>Reduce body fat and Improve metabolic syndrome</li><li>Alleviate upper respiratory illnesses</li><li>Maintain healthy intestinal environment</li></ul>",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -218,7 +218,7 @@
             "subheading_size": 3,
             "title": "",
             "heading_size": 7,
-            "text": "<h6><strong>Support for the modern professional.</strong></h6><p>This combo pack helps maintain liver function and promotes healthy circulation—delivering the clarity and sustained energy professionals need to power through their day.</p>",
+            "text": "<h6><strong>Gentle support for the whole family's digestion.</strong></h6><p>This trusted, all-natural combo promotes gut health and smooth digestion. A healthy gut also supports stronger immunity and overall well-being.</p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
@@ -294,9 +294,9 @@
           "type": "question",
           "settings": {
             "default_open": true,
-            "title": "Thomson Circulon",
-            "subtitle": "<p>125 mg</p>",
-            "content": "<p>Each tablet of Thomson Activated Ginkgo is made of 125mg of Ginkgo Biloba extract from Japan, equivalent to 6250mg of young Japanese Ginkgo Leaves.<br/><br/>It is also standardized to minimum 24% flavones Glycosides and 6% terpenes lactones, which are key active components found in Ginkgo Biloba extract.<br/><br/>The Ginkgo Biloba extract used also contains less than 1 ppm Ginkgolic Acid to reduce allergic reaction.</p>",
+            "title": "Thomson ProbioGut",
+            "subtitle": "",
+            "content": "<p>Each 2g sachet contains Probiotics with more than 260 scientific studies; Bifidobacterium Longum BB536 and Bifidobacterium Breve B3 from Japan, and Prebiotics Human Milk Oligosaccharides (HMO) and Inulin  </p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
