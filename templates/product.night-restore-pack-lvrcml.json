@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>Essential support for working professionals, providing sustained energy throughout the day. </p>",
+            "text": "<p>Natural combination for individuals seeking support to unwind and improve sleep quality. </p>",
             "layout": "left",
             "padding_bottom": 16
           }
@@ -48,7 +48,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p>Each gift set consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson Circulon 30s</li></ul>",
+            "text": "<p>Each gift set consists of:</p><ul><li>Thomson Livrin 60s</li><li>Thomson CalmiLax 2 x 30s </li></ul>",
             "layout": "left",
             "padding_bottom": 16
           }
@@ -136,9 +136,9 @@
             "show_description": true,
             "show_read_more": false,
             "title_1": "Ingredients",
-            "raw_content_1": "<h6><strong>Thomson Livrin </strong></h6><p>Each capsule is made of 300mg of highly concentrated Milk Thistle Extract from Europe.</p><h6><br/><strong>Thomson Circulon 125</strong></h6><p>Each tablet is made of 125mg of Ginkgo Biloba extract from Japan, which is equivalent to 6250mg of young Japanese Ginkgo Leaves.</p>",
+            "raw_content_1": "<h6><strong>Thomson Livrin </strong></h6><p>Each capsule is made of 300mg of highly concentrated Milk Thistle Extract from Europe.</p><h6><strong><br/>Thomson CalmiLax</strong></h6><p>Each 520mg Tablet contains patented Rafuma leaves extract and Kanna leaves extract, Brewer Yeast and our Flagship Activated Ginkgo.</p>",
             "title_2": "Health Benefits",
-            "raw_content_2": "<h6><strong>Thomson Livrin</strong></h6><p>Maintain health liver and help with symptoms of poor liver health such as;</p><ul><li>Stomach discomfort</li><li>Fatigue</li><li>Dark eye circles<br/></li></ul><h6><strong>Thomson Circulon 125</strong></h6><p>Promote blood circulation and help with symptoms of poor blood circulation such as;</p><ul><li>Dizziness</li><li>Fatigue</li><li>Cold and numb hands and feet</li></ul>",
+            "raw_content_2": "<h6><strong>Thomson Livrin</strong></h6><p>Maintain health liver and help with symptoms of poor liver health such as;</p><ul><li>Stomach discomfort</li><li>Fatigue</li><li>Dark eye circles<br/></li></ul><h6>Thomson CalmiLax</h6><p>Promote restful sleep using only natural ingredients.</p>",
             "title_3": "",
             "raw_content_3": "",
             "title_4": "",
@@ -218,7 +218,7 @@
             "subheading_size": 3,
             "title": "",
             "heading_size": 7,
-            "text": "<h6><strong>Support for the modern professional.</strong></h6><p>This combo pack helps maintain liver function and promotes healthy circulation—delivering the clarity and sustained energy professionals need to power through their day.</p>",
+            "text": "<h6>For those seeking better rest, naturally.</h6><p>This calming combo supports restful sleep and helps ease the mind—ideal for individuals who struggle to unwind. A good night's sleep reduces daytime fatigue and restores vitality.</p>",
             "text_size": 3,
             "button_text": "",
             "button_url": "",
