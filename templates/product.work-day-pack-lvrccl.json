@@ -385,7 +385,7 @@
           "settings": {
             "default_open": false,
             "title": "Why Thomson",
-            "content": "<h6>Trusted Since 1987<br/></h6><p>At Thomson, we combine decades of expertise with cutting-edge research to create supplements that meet the highest standards of efficacy and quality. Our values drive us to provide products that we proudly stand behind.</p>",
+            "content": "<h6><strong>Trusted Since 1987</strong></h6><p>At Thomson, we combine decades of expertise with cutting-edge research to create supplements that meet the highest standards of efficacy and quality. Our values drive us to provide products that we proudly stand behind.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
