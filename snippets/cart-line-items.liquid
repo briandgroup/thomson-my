@@ -233,7 +233,7 @@
 
 
     <!-- ADD FREE GIFT -->
-    {% if forloop.last and cart.total_price >= 100 %}
+    {% if forloop.last and cart.total_price >= 10000 %}
     <div class="cart__item cart__item--no-border is-animated" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
       <div class="cart__item__image">
         <div class="lazy-image">
@@ -248,7 +248,7 @@
           <div class="cart__item__meta"></div>
         </div>
     
-        <p class="cart__price">{{ cart.total_price }}</p>
+        <p class="cart__price">FREE</p>
     
         <quantity-counter class="cart__quantity-counter">
           <div class="cart__quantity">
