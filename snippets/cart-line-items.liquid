@@ -233,7 +233,7 @@
 
 
     <!-- ADD FREE GIFT -->
-    {% if forloop.last and cart.total_price >= 10000 %}
+    <!-- {% if forloop.last and cart.total_price >= 10000 %}
     <div class="cart__item cart__item--no-border is-animated" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
       <div class="cart__item__image">
         <div class="lazy-image">
@@ -278,7 +278,7 @@
       });
     </script>
 
-      {% endif %}
+      {% endif %} -->
   {%- endcapture -%}
 
   {%- assign line_items_html = line_items_html | append: cart_line_item -%}
