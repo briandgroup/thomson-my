@@ -23,7 +23,7 @@
 
   {%- capture cart_line_item -%}
 
-    <div class="cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
+    <div class="cart__item"
       data-item="{{ line_item.key }}"
       data-item-index="{{ forloop.index }}"
       data-item-title="{{ line_item.title | strip_html }}"
@@ -231,8 +231,9 @@
       {%- endif -%}
     </div>
 
+
+    <!-- ADD FREE GIFT -->
     {% if forloop.last %}
-    
     <div class="cart__item cart__item--no-border is-animated" data-item="42883397353523:fe11c8bc874eccdeea5f9ce1f5e187fd" data-item-index="1" data-item-title="Foundation of Good Health" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
       <div class="cart__item__image">
         <a href="/products/foundation-of-good-health?variant=42883397353523" aria-label="Foundation of Good Health"><div class="lazy-image">
