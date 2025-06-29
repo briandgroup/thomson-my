@@ -233,50 +233,50 @@
 
 
     <!-- ADD FREE GIFT -->
-    {% if forloop.last %}
+    {% if forloop.last and cart.total_price >= 100 %}
     <div class="cart__item cart__item--no-border is-animated" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
-  <div class="cart__item__image">
-    <div class="lazy-image">
-      <img src="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180" alt="" srcset="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=90 90w, //my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180 180w" width="180" height="180" loading="lazy" sizes="90px" class="" />
-    </div>
-  </div>
-
-  <div class="cart__item__content">
-    <div class="cart__item__content-inner">
-      <h4 class="cart__item__title">Foundation of Good Health</h4>
-
-      <div class="cart__item__meta"></div>
-    </div>
-
-    <p class="cart__price">FREE</p>
-
-    <quantity-counter class="cart__quantity-counter">
-      <div class="cart__quantity">
-        <button disabled="disabled" class="cart__quantity-minus wl-cart-disabled" type="button">
-          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 24 24">
-            <path d="M6 12h12" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
-        <input disabled="disabled" class="cart__quantity-field wl-cart-disabled" type="number" value="1" pattern="[0-9]*" />
-        <button disabled="disabled" class="cart__quantity-plus wl-cart-disabled" type="button">
-          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 24 24">
-            <path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
+      <div class="cart__item__image">
+        <div class="lazy-image">
+          <img src="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180" alt="" srcset="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=90 90w, //my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180 180w" width="180" height="180" loading="lazy" sizes="90px" class="" />
+        </div>
       </div>
-    </quantity-counter>
-  </div>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('. wl-cart-disabled').forEach(function (element) {
-      element.addEventListener('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
+    
+      <div class="cart__item__content">
+        <div class="cart__item__content-inner">
+          <h4 class="cart__item__title">Foundation of Good Health</h4>
+    
+          <div class="cart__item__meta"></div>
+        </div>
+    
+        <p class="cart__price">FREE</p>
+    
+        <quantity-counter class="cart__quantity-counter">
+          <div class="cart__quantity">
+            <button disabled="disabled" class="cart__quantity-minus wl-cart-disabled" type="button">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 24 24">
+                <path d="M6 12h12" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <input disabled="disabled" class="cart__quantity-field wl-cart-disabled" type="number" value="1" pattern="[0-9]*" />
+            <button disabled="disabled" class="cart__quantity-plus wl-cart-disabled" type="button">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 24 24">
+                <path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </quantity-counter>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('. wl-cart-disabled').forEach(function (element) {
+          element.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+          });
+        });
       });
-    });
-  });
-</script>
+    </script>
 
       {% endif %}
   {%- endcapture -%}
@@ -331,5 +331,4 @@
 
   {%- when 'upsell-items' -%}
     {{- upsell_items_html -}}
-
 {%- endcase -%}
