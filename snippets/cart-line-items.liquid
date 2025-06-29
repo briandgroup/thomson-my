@@ -230,6 +230,9 @@
         {%- endfor -%}
       {%- endif -%}
     </div>
+
+    {% if forloop.last %}
+    {% endif %}
   {%- endcapture -%}
 
   {%- assign line_items_html = line_items_html | append: cart_line_item -%}
