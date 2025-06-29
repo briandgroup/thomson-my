@@ -234,35 +234,39 @@
 
     <!-- ADD FREE GIFT -->
     {% if forloop.last %}
-    <div class="cart__item cart__item--no-border is-animated" data-item="42883397353523:fe11c8bc874eccdeea5f9ce1f5e187fd" data-item-index="1" data-item-title="Foundation of Good Health" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
-      <div class="cart__item__image">
-        <a href="/products/foundation-of-good-health?variant=42883397353523" aria-label="Foundation of Good Health"><div class="lazy-image">
-              <img src="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180" alt="" srcset="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=90 90w, //my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180 180w" width="180" height="180" loading="lazy" sizes="90px" class="">
-            </div></a>
+    <div class="cart__item cart__item--no-border is-animated" data-animation="cart-items-fade" data-animation-duration="500" data-animation-delay="200">
+  <div class="cart__item__image">
+    <div class="lazy-image">
+      <img src="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180" alt="" srcset="//my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=90 90w, //my-shop.thomsonhealth.com/cdn/shop/files/cny-health-bundle.png?v=1734948208&amp;width=180 180w" width="180" height="180" loading="lazy" sizes="90px" class="" />
+    </div>
+  </div>
+
+  <div class="cart__item__content">
+    <div class="cart__item__content-inner">
+      <h4 class="cart__item__title">Foundation of Good Health</h4>
+
+      <div class="cart__item__meta"></div>
+    </div>
+
+    <p class="cart__price">FREE</p>
+
+    <quantity-counter class="cart__quantity-counter">
+      <div class="cart__quantity">
+        <button disabled="disabled" class="cart__quantity-minus" type="button">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 24 24">
+            <path d="M6 12h12" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <input disabled="disabled" class="cart__quantity-field" type="number" value="1" pattern="[0-9]*" />
+        <button disabled="disabled" class="cart__quantity-plus" type="button">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 24 24">
+            <path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
       </div>
-
-      <div class="cart__item__content">
-        <div class="cart__item__content-inner">
-          <h4 class="cart__item__title">
-            <a href="/products/foundation-of-good-health?variant=42883397353523">Foundation of Good Health</a>
-          </h4>
-
-          <div class="cart__item__meta"></div>
-        </div>
-
-        <p class="cart__price">RM280.00</p>
-
-        <quantity-counter class="cart__quantity-counter">
-          <div class="cart__quantity">
-            <button disabled class="cart__quantity-minus" type="button" name="decrease" title="Decrease button quantity - Foundation of Good Health"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-            <input disabled class="cart__quantity-field" type="number" id="updates_42883397353523:fe11c8bc874eccdeea5f9ce1f5e187fd" name="updates[]" data-id="42883397353523:fe11c8bc874eccdeea5f9ce1f5e187fd" value="1" title="Quantity field - Foundation of Good Health" pattern="[0-9]*">
-
-            <button disabled class="cart__quantity-plus" type="button" name="increase" title="Increase button quantity - Foundation of Good Health"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 24 24"><path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-          </div>
-
-          <a class="cart__item__remove" href="/cart/change?line=1&amp;quantity=0" data-item-remove="" data-id="42883397353523:fe11c8bc874eccdeea5f9ce1f5e187fd" title="Remove">Remove</a>
-        </quantity-counter>
-      </div></div>
+    </quantity-counter>
+  </div>
+</div>
       {% endif %}
   {%- endcapture -%}
 
