@@ -295,7 +295,7 @@
           "settings": {
             "default_open": true,
             "title": "Thomson CalmiLax",
-            "subtitle": "",
+            "subtitle": "<p>25 mg</p>",
             "content": "<p>Each capsule contains 25mg of Patented Rafuma Leaves Extract, 10mg Flagship Activated Ginkgo Biloba Extract, 12mg Patented Kanna Aeriel Extract, and 12mg Brewer Yeast. It does not contain Hormone or Melatonin. </p>",
             "show_icon": false,
             "icon_name": "icon-award",
