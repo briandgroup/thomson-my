@@ -281,9 +281,9 @@
           "type": "question",
           "settings": {
             "default_open": true,
-            "title": "Thomson Livrin",
-            "subtitle": "<p>300 mg</p>",
-            "content": "<p>Each capsule of Thomson Livrin contains 300mg of Highly Concentrated Milk Thistle Extract, renowned for its liver health supporting properties. This extract, derived from the seeds of the milk thistle plant, is rich in flavonoids and silymarin compounds.<br/><br/>It also contains 240 mg Silymarin and 90 mg of Silybin A&B, which are key active components found in Milk Thistle extract. Thomson Livrin harnesses the benefits of these active ingredients to protect the liver against toxins, oxidative stress and inflammation.</p>",
+            "title": "  Thomson Circulon",
+            "subtitle": "<p>125 mg</p>",
+            "content": "<p>Each tablet of Thomson Activated Ginkgo is made of 125mg of Ginkgo Biloba extract from Japan, equivalent to 6250mg of young Japanese Ginkgo Leaves.<br/><br/>It is also standardized to minimum 24% flavones Glycosides and 6% terpenes lactones, which are key active components found in Ginkgo Biloba extract.<br/><br/>The Ginkgo Biloba extract used also contains less than 1 ppm Ginkgolic Acid to reduce allergic reaction.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -294,9 +294,9 @@
           "type": "question",
           "settings": {
             "default_open": true,
-            "title": "Thomson ProbioGut",
-            "subtitle": "",
-            "content": "<p>Each 2g sachet contains Probiotics with more than 260 scientific studies; Bifidobacterium Longum BB536 and Bifidobacterium Breve B3 from Japan, and Prebiotics Human Milk Oligosaccharides (HMO) and Inulin  </p>",
+            "title": "Thomson Xbido",
+            "subtitle": "<p>50 mg</p>",
+            "content": "<p>Each tablet contains 50mg Tongkat Ali Extract, 25mg Rafuma Leaves Extract, 50mg Red Ginseng Root Extract and 30mg Flagship Activated Ginkgo Biloba Extract </p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -349,7 +349,7 @@
           "settings": {
             "default_open": false,
             "title": "Dosage",
-            "content": "<h6><strong>Thomson Livrin</strong></h6><p>1 capsule three times daily, before or after meals.</p><h6><strong>Thomson Circulon 125</strong></h6><p>1 to 2 tablets a day, before or after meals.</p>",
+            "content": "<h6><strong>Thomson Circulon 125</strong></h6><p>1 to 2 tablets a day, before or after meals.</p><h6><strong>Thomson Xbido</strong></h6><p>1 to 2 tablets once daily, before or after meals.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -361,7 +361,7 @@
           "settings": {
             "default_open": false,
             "title": "Warning",
-            "content": "<h6><strong>Thomson Livrin</strong></h6><p>Please consult your pharmacist/doctor before taking this product. Pregnancy and breastfeeding: insufficient reliable data. Store below 30°C. Protect from light and moisture. Keep out of reach of children.</p><h6><strong>Thomson Circulon 125</strong></h6><p>As the use of Ginkgo may increase the tendency of bleeding, please consult your pharmacist/doctor if you are on or intend to start using any other medicines and before you undergo any surgical/dental procedure. Individuals who are hypersensitive or intolerant to Ginkgo biloba preparations. Contraindicated inpregnancy and lactation. Please consult your pharmacist/doctor before taking this product. Side effects: Rare cases of stomach or intestinal upsets, headaches or allergic skin reaction. Store below 30°C. Keep away from heat and moisture. Keep out of reach of children.</p>",
+            "content": "<h6><strong>Thomson Circulon 125</strong></h6><p>As the use of Ginkgo may increase the tendency of bleeding, please consult your pharmacist/doctor if you are on or intend to start using any other medicines and before you undergo any surgical/dental procedure. Individuals who are hypersensitive or intolerant to Ginkgo biloba preparations. Contraindicated inpregnancy and lactation. Please consult your pharmacist/doctor before taking this product. Side effects: Rare cases of stomach or intestinal upsets, headaches or allergic skin reaction. Store below 30°C. Keep away from heat and moisture. Keep out of reach of children.</p><h6><strong>Thomson Xbido</strong></h6><p>Please consult your pharmacist/doctor before taking this product. As the use of ginkgo my increase the tendency of bleeding, please consult your pharmacist/doctor if you are on or intend to start using any other medicines and before you undergo any surgical/dental procedure. Do not exceed the stated dose. Safety on long term use has not been established. Store below 30°C, protect from light and moisture. Keep out of reach of children.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
