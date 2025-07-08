@@ -1394,6 +1394,7 @@
       });
     document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
       variantInput.addEventListener('change', function() {
+        100 - (parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]) / parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]) * 100)
         console.log(wlPrices[variantInput.getAttribute('data-variant-id')]);
       });
     });
