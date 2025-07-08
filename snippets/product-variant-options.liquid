@@ -8,7 +8,7 @@
   assign size_separator = '_size_'
   assign specific_pages = ''
   assign show_size_link_separated = true
-  assign form_blocks = section.blocks | where: "type", "buttons"
+  assign form_blocks = section.blocks | where: 'type', 'buttons'
 -%}
 
 {%- capture product_variant_options -%}
@@ -346,9 +346,19 @@
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
+{% assign compare_at_price = option.compare_at_price %}
+{% assign current_price = option.price %} 
+                        
 
                             <span class="option-title">
                         {{ value }}
+                        {% if compare_at_price > current_price %}
+  {% assign savings = compare_at_price | minus: current_price %}
+  {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
+  (Save {{ percent }}%)
+                          {% else %}
+                          {{ variant }} | {{ current_price }}
+{% endif %}
                         </span>
                           </label>
                         </span>
@@ -619,20 +629,22 @@
 {%- endcapture -%}
 
 {%- if product_variant_options != blank -%}
-  <div class="product__block{% if settings.show_lines %} product__block--lines{% endif %} product__form__holder block-padding"
+  <div
+    class="product__block{% if settings.show_lines %} product__block--lines{% endif %} product__form__holder block-padding"
     {{ block_style }}
     {{ block.shopify_attributes }}
     {% if animation_name %}
       data-animation="{{ animation_name }}"
       data-animation-duration="{{ animation_duration }}"
       data-animation-delay="{{ animation_delay }}"
-    {% endif %}>
+    {% endif %}
+  >
     {%- unless form_blocks.size > 0 -%}
       <product-form>
     {%- endunless -%}
-      <div class="product__form__outer{{ hide_labels_class }}">
-        {{ product_variant_options }}
-      </div>
+    <div class="product__form__outer{{ hide_labels_class }}">
+      {{ product_variant_options }}
+    </div>
     {%- unless form_blocks.size > 0 -%}
       </product-form>
     {%- endunless -%}
