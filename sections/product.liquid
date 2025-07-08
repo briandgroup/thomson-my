@@ -1394,8 +1394,10 @@
       });
     document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
       variantInput.addEventListener('change', function() {
-        100 - (parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]) / parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]) * 100)
-        console.log(wlPrices[variantInput.getAttribute('data-variant-id')]);
+        let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
+        let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
+        
+        console.log( compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100) );
       });
     });
   });
