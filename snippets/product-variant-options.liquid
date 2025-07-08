@@ -353,7 +353,7 @@
                               {{ value }}
                               {% assign compare_at_price = product.variants[value].compare_at_price %}
                               {% assign current_price = product.variants[value].price %} 
-                              <script>console.log('{{ compare_at_price }} | {{ current_price }}')</script>
+                              <script>console.log('{{ product }} | {{ current_price }}')</script>
                               {% if compare_at_price > current_price %}
                                 {% assign savings = compare_at_price | minus: current_price %}
                                 {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
