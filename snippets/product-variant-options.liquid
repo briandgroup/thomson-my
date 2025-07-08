@@ -318,9 +318,6 @@
 
                                   {%- for variant in product.variants -%}
                                     {%- for option in variant.options -%}
-                                      {% assign compare_at_price = variant.compare_at_price %}
-                                      {% assign current_price = variant.price %} 
-                                      <script>console.log('{{ compare_at_price }} | {{ current_price }}')</script>
                                       
                                       {%- if option == value -%}
                                         {%- assign variant_option_image = variant.featured_media.preview_image -%}
@@ -354,6 +351,9 @@
 
                             <span class="option-title">
                               {{ value }}
+                              {% assign compare_at_price = product.variants[value].compare_at_price %}
+                              {% assign current_price = product.variants[value].price %} 
+                              <script>console.log('{{ compare_at_price }} | {{ current_price }}')</script>
                               {% if compare_at_price > current_price %}
                                 {% assign savings = compare_at_price | minus: current_price %}
                                 {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
