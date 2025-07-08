@@ -276,6 +276,7 @@
                           style="--swatch: var(--{{ value | handle }});"
                         >
                           <input type="radio"
+                              data-variant-id="{{ matching_variant.id }}"
                               form="{{ product_form_id }}"
                               data-single-option-selector
                               data-index="option{{ option.position }}"
@@ -292,6 +293,7 @@
                         {% comment %} radio button {% endcomment %}
                         <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
                           <input
+                        data-variant-id="{{ matching_variant.id }}"
                             type="radio"
                             form="{{ product_form_id }}"
                             data-single-option-selector
