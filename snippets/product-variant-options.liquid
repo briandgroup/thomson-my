@@ -356,7 +356,7 @@
   {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
   (Save {{ percent }}%)
                           {% else %}
-                          {{ compare_at_price }} | {{ current_price }}
+                          {{ variant }} | {{ current_price }}
 {% endif %}
                         </span>
                           </label>
