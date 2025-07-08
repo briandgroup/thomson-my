@@ -351,15 +351,6 @@
 
                             <span class="option-title">
                               {{ value }}
-                              {% assign current_variant = product.selected_or_first_available_variant %}
-                              {% assign compare_at_price = current_variant.compare_at_price %}
-                              {% assign current_price = current_variant.price %} 
-                              <script>console.log('{{ current_variant }} | {{ current_price }}')</script>
-                              {% if compare_at_price > current_price %}
-                                {% assign savings = compare_at_price | minus: current_price %}
-                                {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
-                                (Save {{ percent }}%)
-                              {% endif %}
                             </span>
                           </label>
                         </span>
