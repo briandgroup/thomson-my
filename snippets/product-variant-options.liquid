@@ -346,18 +346,9 @@
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
-{% assign compare_at_price = option.compare_at_price %}
-{% assign current_price = option.price %}
 
                             <span class="option-title">
                         {{ value }}
-                        {% if compare_at_price > current_price %}
-  {% assign savings = compare_at_price | minus: current_price %}
-  {% assign percent = savings | times: 100.0 | divided_by: compare_at_price | round %}
-  (Save {{ percent }}%)
-                          {% else %}
-                          {{ variant }} | {{ current_price }}
-{% endif %}
                         </span>
                           </label>
                         </span>
