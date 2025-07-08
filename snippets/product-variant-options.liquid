@@ -265,7 +265,7 @@
                     </span>
                   </legend>
 
-                  <div class="radio__buttons">
+                  <div id="wl_variants" class="radio__buttons">
                     {%- for value in option.values -%}
                       {%- capture input_id -%}{{ uniq_id }}-{{ option.name | handle }}-{{ value | strip_html | escape | handle }}-{{ forloop.index }}{%- endcapture -%}
 
