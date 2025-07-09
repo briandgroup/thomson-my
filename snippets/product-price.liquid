@@ -102,10 +102,12 @@
       
       <script>
         document.addEventListener('DOMContentLoaded', function() {
-          console.log('FOUND PRICE OFF');
-          document.querySelectorAll('div[data-price-off]').forEach((div) => {
-            div.classList.remove('hidden');
-          });
+          setTimeout(() => {
+            console.log('FOUND PRICE OFF');
+            document.querySelectorAll('div[data-price-off]').forEach((div) => {
+              div.classList.remove('hidden');
+            });
+          }, 1000);
         });
       </script>
     {%- endif -%}
