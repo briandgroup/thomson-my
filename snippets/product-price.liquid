@@ -94,7 +94,7 @@
         {% if final_sale %}
           data-final-sale
         {% endif %}
-        class="product__sale"
+        class="product__sale hidden"
       >
         {%- if sale_badge -%}
           <span class="product__price--off">
@@ -121,25 +121,35 @@
   {%- if current_variant.compare_at_price > current_variant.price -%}
     <div class="product__sale">
       <span class="product__price--off">
-        <span></span>
+        <span id="product__amount--off"></span>
         {{ 'products.product.off' | t }}
       </span>
     </div>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(() => {
-          console.log('FOUND PRICE OFF');
-          document.querySelectorAll('div[data-price-off]').forEach((div) => {
-            div.classList.remove('hidden');
+        let wlPrices = {};
+        fetch('/products/{{ product.handle }}.js')
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(productData) {
+            productData.variants.forEach((variant) => {
+              wlPrices[variant.id] = [variant.compare_at_price, variant.price];
+            });
+          })
+          .catch(function(error) {
+            console.error('Error fetching product data: ', error);
           });
-        }, 1000);
-
         document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
           variantInput.addEventListener('change', function() {
-            document.querySelectorAll('div[data-price-off]').forEach((div) => {
-              div.classList.remove('hidden');
-            });
+            let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
+            let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
+
+            console.log( compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100) );
+            document.querySelectorAll('span#product__amount--off').forEach((span) => {
+                span.innerText = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100)
+              });
           });
         });
       });
