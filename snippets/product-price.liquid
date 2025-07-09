@@ -151,10 +151,10 @@
             document.querySelectorAll('span#product__amount--off').forEach((span) => {
                 let amount = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100);
 
-                span.parentElement.parentElement.style.display = 'none';
+                span.parentElement.parentElement.classList.add('hidden');
 
                 if(amount !== 'no discount') {
-                  span.parentElement.parentElement.style.display = 'block';
+                  span.parentElement.parentElement.classList.remove('hidden');
                 }
                 span.innerText = Math.round(amount) + "%";
               });
