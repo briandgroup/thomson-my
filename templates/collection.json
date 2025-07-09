@@ -252,6 +252,7 @@
     },
     "main": {
       "type": "collection",
+      "disabled": true,
       "settings": {
         "enable_sort": true,
         "enable_filters": false,
