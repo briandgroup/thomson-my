@@ -324,7 +324,7 @@
           "settings": {
             "title": "All Products",
             "featured_collection": "products",
-            "show_image": true,
+            "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
             "overlay_color": "#000",
@@ -343,7 +343,7 @@
           "settings": {
             "title": "Products Combo",
             "featured_collection": "products-combo",
-            "show_image": true,
+            "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
             "overlay_color": "#000",
@@ -360,9 +360,9 @@
         "collection_YXgqri": {
           "type": "collection",
           "settings": {
-            "title": "",
+            "title": "Gift Card",
             "featured_collection": "gift-card",
-            "show_image": true,
+            "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
             "overlay_color": "#000",
