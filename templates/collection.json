@@ -217,6 +217,7 @@
     },
     "hero": {
       "type": "collection-image-with-title",
+      "disabled": true,
       "custom_css": [
         ".collection__title {padding-bottom: 0px; padding-top: 40px;}"
       ],
