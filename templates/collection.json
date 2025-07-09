@@ -253,7 +253,7 @@
       "type": "collection",
       "settings": {
         "enable_sort": true,
-        "enable_filters": false,
+        "enable_filters": true,
         "filter_layout": "inline-open",
         "collection_linklist": "",
         "grid": 3,
