@@ -313,10 +313,7 @@
         "products_8nfQjf": {
           "type": "products",
           "settings": {
-            "product_list": [
-              "combo-for-performance-comfort",
-              "foundation-of-good-health"
-            ],
+            "product_list": "{{ collection.products }}",
             "layout_mobile": "slider"
           }
         }
