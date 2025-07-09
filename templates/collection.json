@@ -343,7 +343,7 @@
           "type": "collection",
           "settings": {
             "title": "All Products",
-            "featured_collection": "products",
+            "featured_collection": "all-products",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
@@ -393,7 +393,7 @@
         "show_product_count": false,
         "layout_desktop": "slider",
         "layout_mobile": "slider",
-        "product_limit": 6,
+        "product_limit": 7,
         "grid": 4,
         "rows": 3,
         "bg_color": "",
