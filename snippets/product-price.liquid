@@ -120,7 +120,7 @@
 
   {%- if current_variant.compare_at_price > current_variant.price -%}
     <div class="product__sale">
-      <span class="product__price--off">
+      <span class="product__price--off" style="margin-left: 0 !important">
         <span id="product__amount--off"></span>
         {{ 'products.product.off' | t }}
       </span>
@@ -155,7 +155,7 @@
                 if(amount !== 'no discount') {
                   span.parentElement.parentElement.classList.remove('hidden')
                 }
-                span.innerText = Math.round(amount);
+                span.innerText = Math.round(amount) + "%";
               });
           });
         });
