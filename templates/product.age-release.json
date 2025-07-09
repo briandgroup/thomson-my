@@ -278,22 +278,9 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Thomson Livrin",
-            "subtitle": "<p>300 mg</p>",
-            "content": "<p>Each capsule of Thomson Livrin contains 300mg of Highly Concentrated Milk Thistle Extract, renowned for its liver health supporting properties. This extract, derived from the seeds of the milk thistle plant, is rich in flavonoids and silymarin compounds.<br/><br/>It also contains 240 mg Silymarin and 90 mg of Silybin A&B, which are key active components found in Milk Thistle extract. Thomson Livrin harnesses the benefits of these active ingredients to protect the liver against toxins, oxidative stress and inflammation.</p>",
-            "show_icon": false,
-            "icon_name": "icon-award",
-            "icon_size": 20,
-            "icon_color": "#545454"
-          }
-        },
-        "question_MULVe4": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Thomson Circulon",
-            "subtitle": "<p>125 mg</p>",
-            "content": "<p>Each tablet of Thomson Activated Ginkgo is made of 125mg of Ginkgo Biloba extract from Japan, equivalent to 6250mg of young Japanese Ginkgo Leaves.<br/><br/>It is also standardized to minimum 24% flavones Glycosides and 6% terpenes lactones, which are key active components found in Ginkgo Biloba extract.<br/><br/>The Ginkgo Biloba extract used also contains less than 1 ppm Ginkgolic Acid to reduce allergic reaction.</p>",
+            "title": "Thomson Activated Ginkgo Extract",
+            "subtitle": "<p>40 mg</p>",
+            "content": "<p>Each tablet of Thomson Activated Ginkgo is made of 40mg of Ginkgo Biloba extract from Japan, equivalent to 2000mg of young Japanese Ginkgo Leaves.<br/><br/>It is also standardized to minimum 24% flavones Glycosides and 6% terpenes lactones, which are key active components found in Ginkgo Biloba extract.<br/><br/>The Ginkgo Biloba extract used also contains less than 1 ppm Ginkgolic Acid to reduce allergic reaction.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -303,8 +290,7 @@
       },
       "block_order": [
         "heading_A6rGQJ",
-        "question_Kdq6p7",
-        "question_MULVe4"
+        "question_Kdq6p7"
       ],
       "custom_css": [
         ".accordion__heading:first-child {text-align: center;}",
