@@ -143,6 +143,7 @@
           });
 
         function updateDiscountedAmount(variantInput) {
+          console.log(variantInput);
           let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
             let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
 
@@ -158,7 +159,7 @@
               });
         }
 
-        console.log(`updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]'))`);
+        updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]'));
 
         document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
           variantInput.addEventListener('change', updateDiscountedAmount(variantInput));
