@@ -158,7 +158,7 @@
               });
         }
 
-        console.log(updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]')));
+        console.log(`updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]'))`);
 
         document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
           variantInput.addEventListener('change', updateDiscountedAmount(variantInput));
