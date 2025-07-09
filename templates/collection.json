@@ -269,13 +269,6 @@
     "section_collections_list_DhyKbH": {
       "type": "section-collections-list",
       "blocks": {
-        "collection_JGrPxt": {
-          "type": "collection",
-          "settings": {
-            "collection": "gift-card",
-            "title": ""
-          }
-        },
         "collection_4UhPcd": {
           "type": "collection",
           "settings": {
@@ -289,12 +282,19 @@
             "collection": "products-combo",
             "title": ""
           }
+        },
+        "collection_JGrPxt": {
+          "type": "collection",
+          "settings": {
+            "collection": "gift-card",
+            "title": ""
+          }
         }
       },
       "block_order": [
-        "collection_JGrPxt",
         "collection_4UhPcd",
-        "collection_7MRF6U"
+        "collection_7MRF6U",
+        "collection_JGrPxt"
       ],
       "name": "Collection list",
       "settings": {
