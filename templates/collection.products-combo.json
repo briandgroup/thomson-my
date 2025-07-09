@@ -238,6 +238,47 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_content_ab8ffH": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_br7yT7": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Products Combo",
+            "heading_size": 7,
+            "text": "",
+            "text_size": 4,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-center",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_br7yT7"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "subcollections": {
       "type": "subcollections",
       "settings": {
@@ -313,6 +354,7 @@
   "order": [
     "section_slideshow_Yk4Ctm",
     "hero",
+    "section_custom_content_ab8ffH",
     "subcollections",
     "main",
     "section_products_image_9CGQXC",
