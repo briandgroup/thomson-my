@@ -82,7 +82,7 @@
     -%}
 
     {%- if sale_badge or final_sale or final_sale_variant -%}
-      <div data-price-off{% if final_sale %} data-final-sale{% endif %} class="product__sale">
+      <div data-price-off{% if final_sale %} data-final-sale{% endif %} class="product__sale"> 
         {%- if sale_badge -%}
           <span class="product__price--off">
             <span data-price-off-amount></span>
