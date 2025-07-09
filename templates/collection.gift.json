@@ -246,7 +246,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "Products Combo",
+            "title": "Gift",
             "heading_size": 7,
             "text": "",
             "text_size": 4,
@@ -314,8 +314,7 @@
           "type": "products",
           "settings": {
             "product_list": [
-              "combo-for-performance-comfort",
-              "foundation-of-good-health"
+              "gift-card"
             ],
             "layout_mobile": "slider"
           }
