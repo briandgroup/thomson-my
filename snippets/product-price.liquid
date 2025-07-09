@@ -150,7 +150,7 @@
                 let amount = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100);
 
                 span.parentElement.parentElement.classList.add('hidden');
-              
+
                 if(amount !== 'no discount') {
                   span.parentElement.parentElement.classList.remove('hidden')
                 }
@@ -159,7 +159,7 @@
         }
 
         updateDiscountedAmount();
-        
+
         document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
           variantInput.addEventListener('change', updateDiscountedAmount);
         });
