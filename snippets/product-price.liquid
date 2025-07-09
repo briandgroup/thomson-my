@@ -70,7 +70,7 @@
     </div>
 
     {%- liquid
-      assign sale_badge = true
+      assign sale_badge = settings.sale_badge
       assign final_sale = settings.final_sale | default: product.metafields.theme.final_sale.value
       assign final_sale_variant = false
 
