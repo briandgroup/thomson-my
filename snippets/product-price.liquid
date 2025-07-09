@@ -99,6 +99,13 @@
           </div>
         {%- endif -%}
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('div[data-price-off]').forEach((div) => {
+            div.removeClass('hidden');
+          });
+        });
+      </script>
     {%- endif -%}
   </div>
 
