@@ -303,7 +303,7 @@
         "button_text": "",
         "button_url": "shopify://collections",
         "button_type": "btn--primary",
-        "button_size": "",
+        "button_size": "btn--small",
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout": "grid",
