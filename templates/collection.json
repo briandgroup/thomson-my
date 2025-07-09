@@ -253,8 +253,8 @@
       "type": "collection",
       "settings": {
         "enable_sort": true,
-        "enable_filters": true,
-        "filter_layout": "inline-open",
+        "enable_filters": false,
+        "filter_layout": "inline-closed",
         "collection_linklist": "",
         "grid": 3,
         "grid_mobile": "2",
@@ -262,6 +262,56 @@
         "border_color": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_collections_list_DhyKbH": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_JGrPxt": {
+          "type": "collection",
+          "settings": {
+            "collection": "gift-card",
+            "title": ""
+          }
+        },
+        "collection_4UhPcd": {
+          "type": "collection",
+          "settings": {
+            "collection": "products",
+            "title": ""
+          }
+        },
+        "collection_7MRF6U": {
+          "type": "collection",
+          "settings": {
+            "collection": "products-combo",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_JGrPxt",
+        "collection_4UhPcd",
+        "collection_7MRF6U"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "title": "Collection list",
+        "description": "",
+        "button_text": "",
+        "button_url": "shopify://collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout": "grid",
+        "aspect_ratio": 1,
+        "grid": 3,
+        "layout_mobile": "slider",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "17271545690e891ed8": {
@@ -287,6 +337,7 @@
     "hero",
     "subcollections",
     "main",
+    "section_collections_list_DhyKbH",
     "17271545690e891ed8"
   ]
 }
