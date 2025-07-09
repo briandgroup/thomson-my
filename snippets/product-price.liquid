@@ -80,7 +80,7 @@
         endif
       endfor
     -%}
-  <script>alert('')</script>
+  
     {%- if sale_badge or final_sale or final_sale_variant -%}
       <div data-price-off{% if final_sale %} data-final-sale{% endif %} class="product__sale"> 
         {%- if sale_badge -%}
@@ -99,6 +99,7 @@
           </div>
         {%- endif -%}
       </div>
+      
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           document.querySelectorAll('div[data-price-off]').forEach((div) => {
