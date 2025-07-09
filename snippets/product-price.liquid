@@ -137,6 +137,7 @@
             productData.variants.forEach((variant) => {
               wlPrices[variant.id] = [variant.compare_at_price, variant.price];
             });
+            updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]'));
           })
           .catch(function(error) {
             console.error('Error fetching product data: ', error);
@@ -158,8 +159,6 @@
                 span.innerText = Math.round(amount) + "%";
               });
         }
-
-        updateDiscountedAmount(document.querySelector('input[type=radio][data-variant-id="{{current_variant.id}}"]'));
 
         document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
           variantInput.addEventListener('change', updateDiscountedAmount(variantInput));
