@@ -148,7 +148,14 @@
 
             console.log( compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100) );
             document.querySelectorAll('span#product__amount--off').forEach((span) => {
-                span.innerText = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100)
+                let amount = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100);
+
+                span.classList.add('hidden');
+              
+                if(amount !== 'no discount') {
+                  span.classList.remove('hidden')
+                }
+                span.innerText = Math.round(amount);
               });
           });
         });
