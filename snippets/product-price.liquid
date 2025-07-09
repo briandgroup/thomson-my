@@ -108,6 +108,14 @@
               div.classList.remove('hidden');
             });
           }, 1000);
+
+          document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
+            variantInput.addEventListener('change', function() {
+              document.querySelectorAll('div[data-price-off]').forEach((div) => {
+                div.classList.remove('hidden');
+              });
+            });
+          });
         });
       </script>
     {%- endif -%}
