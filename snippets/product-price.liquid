@@ -1,4 +1,4 @@
-ty{%- liquid
+{%- liquid
   assign current_variant = product.selected_or_first_available_variant
   assign units = product.variants | map: 'unit_price' | compact
   if units[0]
@@ -82,7 +82,7 @@ ty{%- liquid
     -%}
   
     {%- if sale_badge or final_sale or final_sale_variant -%}
-      <div data-price-off{% if final_sale %} data-final-sale{% endif %} class="product__sale" style="display: block!important"> 
+      <div data-price-off{% if final_sale %} data-final-sale{% endif %} class="product__sale"> 
         {%- if sale_badge -%}
           <span class="product__price--off">
             <span data-price-off-amount></span>
