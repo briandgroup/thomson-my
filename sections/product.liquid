@@ -1377,31 +1377,7 @@
   {%- endif -%}
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    let wlPrices = {};
-    fetch('/products/{{ product.handle }}.js')
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(productData) {
-        productData.variants.forEach((variant) => {
-          wlPrices[variant.id] = [variant.compare_at_price, variant.price];
-        });
-      })
-      .catch(function(error) {
-        console.error('Error fetching product data: ', error);
-      });
-    document.getElementById('wl_variants').querySelectorAll('input[type=radio][data-variant-id]').forEach((variantInput) => {
-      variantInput.addEventListener('change', function() {
-        let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
-        let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
-        
-        console.log( compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100) );
-      });
-    });
-  });
-</script>
+
 
 {% schema %}
 {
