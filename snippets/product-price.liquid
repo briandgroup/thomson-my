@@ -146,14 +146,9 @@
         function updateDiscountedAmount(variantInput) {
           let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
             let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
-          console.log("");console.log("");console.log("");console.log("");console.log("");
-          console.log(compare_at_price);
-          console.log("");console.log("");console.log("");console.log("");console.log("");
-          console.log(price);
-          console.log("");console.log("");console.log("");console.log("");console.log("");
 
             document.querySelectorAll('span#product__amount--off').forEach((span) => {
-                let amount = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100);
+                let amount = compare_at_price == 0 || isNan(compare_at_price) ? 'no discount' : 100 - (price / compare_at_price * 100);
 
                 span.parentElement.parentElement.style.display = 'none';
 
