@@ -134,6 +134,9 @@
             return response.json();
           })
           .then(function(productData) {
+            console.log("");console.log("");console.log("");console.log("");console.log("");
+            console.log("success");
+            console.log("");console.log("");console.log("");console.log("");console.log("");
             productData.variants.forEach((variant) => {
               wlPrices[variant.id] = [variant.compare_at_price, variant.price];
             });
