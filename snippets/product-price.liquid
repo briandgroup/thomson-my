@@ -134,9 +134,6 @@
             return response.json();
           })
           .then(function(productData) {
-            console.log("");console.log("");console.log("");console.log("");console.log("");
-            console.log("success");
-            console.log("");console.log("");console.log("");console.log("");console.log("");
             productData.variants.forEach((variant) => {
               wlPrices[variant.id] = [variant.compare_at_price, variant.price];
             });
@@ -147,11 +144,13 @@
           });
 
         function updateDiscountedAmount(variantInput) {
-          console.log("");console.log("");console.log("");console.log("");console.log("");
-          console.log(variantInput);
-          console.log("");console.log("");console.log("");console.log("");console.log("");
           let compare_at_price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][0]);
             let price = parseFloat(wlPrices[variantInput.getAttribute('data-variant-id')][1]);
+          console.log("");console.log("");console.log("");console.log("");console.log("");
+          console.log(compare_at_price);
+          console.log("");console.log("");console.log("");console.log("");console.log("");
+          console.log(price);
+          console.log("");console.log("");console.log("");console.log("");console.log("");
 
             document.querySelectorAll('span#product__amount--off').forEach((span) => {
                 let amount = compare_at_price == 0 ? 'no discount' : 100 - (price / compare_at_price * 100);
