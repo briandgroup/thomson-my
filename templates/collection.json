@@ -297,6 +297,7 @@
         "collection_7MRF6U",
         "collection_JGrPxt"
       ],
+      "disabled": true,
       "name": "Collections List",
       "settings": {
         "title": "Collections List",
@@ -391,9 +392,9 @@
         "text_size": 3,
         "layout": "stacked",
         "show_product_count": false,
-        "layout_desktop": "slider",
+        "layout_desktop": "grid",
         "layout_mobile": "slider",
-        "product_limit": 7,
+        "product_limit": 8,
         "grid": 4,
         "rows": 3,
         "bg_color": "",
