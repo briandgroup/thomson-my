@@ -393,7 +393,7 @@
         "layout": "stacked",
         "show_product_count": false,
         "layout_desktop": "grid",
-        "layout_mobile": "slider",
+        "layout_mobile": "2",
         "product_limit": 8,
         "grid": 4,
         "rows": 3,
