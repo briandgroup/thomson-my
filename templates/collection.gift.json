@@ -215,7 +215,7 @@
           "settings": {
             "subheading": "",
             "subheading_size": 3,
-            "title": "Gift",
+            "title": "Thomson Health Gift Card",
             "heading_size": 7,
             "text": "",
             "text_size": 4,
@@ -297,7 +297,7 @@
         "width": "wrapper--full-padded",
         "reverse_blocks": false,
         "bg_color": "",
-        "padding_top": 50,
+        "padding_top": 19,
         "padding_bottom": 50
       }
     },
