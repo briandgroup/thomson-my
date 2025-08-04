@@ -282,8 +282,94 @@
       "custom_css": [],
       "settings": {}
     },
+    "section_tab_collections_y3jFBG": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_NDEiqq": {
+          "type": "collection",
+          "settings": {
+            "title": "All Products",
+            "featured_collection": "all-products",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "description": "",
+            "color": "#fff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "collection_EnghPE": {
+          "type": "collection",
+          "settings": {
+            "title": "Products Combo",
+            "featured_collection": "products-combo",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "description": "",
+            "color": "#fff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "collection_wwMYrf": {
+          "type": "collection",
+          "settings": {
+            "title": "Gift Card",
+            "featured_collection": "gift-card",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "description": "",
+            "color": "#fff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_NDEiqq",
+        "collection_EnghPE",
+        "collection_wwMYrf"
+      ],
+      "name": "Tab collections",
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "text": "",
+        "text_size": 3,
+        "layout": "stacked",
+        "show_product_count": false,
+        "layout_desktop": "slider",
+        "layout_mobile": "slider",
+        "product_limit": 6,
+        "grid": 4,
+        "rows": 3,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "section_collection_xCNijW": {
       "type": "section-collection",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "heading": "Products",
@@ -444,6 +530,7 @@
     "section_text_row_LAjKGX",
     "section_rich_text_nabGJN",
     "tdg_certificates_TVmdV9",
+    "section_tab_collections_y3jFBG",
     "section_collection_xCNijW",
     "1727341870b4c9b6a9",
     "section_custom_content_AdCaW4",
