@@ -60,6 +60,7 @@
     "sale_text_color": "#ffffff",
     "badge_bg_color": "#ffffff",
     "badge_text_color": "#212121",
+    "show_cutline": true,
     "show_variant_image": false,
     "favicon": "shopify://shop_images/capsule.webp",
     "cart_type": "page",

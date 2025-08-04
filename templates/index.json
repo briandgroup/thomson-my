@@ -299,7 +299,7 @@
             "link_text": "View products",
             "link": "",
             "button_type": "btn--white",
-            "button_size": "",
+            "button_size": "btn--small",
             "button_style": "btn--outline",
             "show_arrow": false
           }
@@ -318,7 +318,7 @@
             "link_text": "View products",
             "link": "",
             "button_type": "btn--white",
-            "button_size": "btn--large",
+            "button_size": "btn--small",
             "button_style": "btn--outline",
             "show_arrow": false
           }
@@ -337,7 +337,7 @@
             "link_text": "View products",
             "link": "",
             "button_type": "btn--white",
-            "button_size": "",
+            "button_size": "btn--small",
             "button_style": "btn--outline",
             "show_arrow": false
           }
