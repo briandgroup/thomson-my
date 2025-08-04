@@ -172,7 +172,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "height": "image-height",
+        "height": "screen-height-three-quarters",
         "mobile_height": "image-height--mobile",
         "width": "wrapper--full",
         "transition": "slide",
