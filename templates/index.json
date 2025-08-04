@@ -318,7 +318,7 @@
             "link_text": "View products",
             "link": "",
             "button_type": "btn--white",
-            "button_size": "",
+            "button_size": "btn--large",
             "button_style": "btn--outline",
             "show_arrow": false
           }
@@ -350,14 +350,14 @@
       ],
       "name": "Tab collections",
       "settings": {
-        "title": "",
-        "heading_size": 5,
+        "title": "THOMSON HEALTH PRODUCTS",
+        "heading_size": 8,
         "text": "",
-        "text_size": 3,
+        "text_size": 8,
         "layout": "stacked",
         "show_product_count": false,
-        "layout_desktop": "slider",
-        "layout_mobile": "slider",
+        "layout_desktop": "grid",
+        "layout_mobile": "2",
         "product_limit": 6,
         "grid": 4,
         "rows": 3,
