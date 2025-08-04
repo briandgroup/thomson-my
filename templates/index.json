@@ -285,11 +285,11 @@
     "section_tab_collections_y3jFBG": {
       "type": "section-tab-collections",
       "blocks": {
-        "collection_NDEiqq": {
+        "collection_EnghPE": {
           "type": "collection",
           "settings": {
-            "title": "All Products",
-            "featured_collection": "all-products",
+            "title": "Products Combo",
+            "featured_collection": "products-combo",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
@@ -304,11 +304,11 @@
             "show_arrow": false
           }
         },
-        "collection_EnghPE": {
+        "collection_NDEiqq": {
           "type": "collection",
           "settings": {
-            "title": "Products Combo",
-            "featured_collection": "products-combo",
+            "title": "All Products",
+            "featured_collection": "all-products",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
@@ -344,8 +344,8 @@
         }
       },
       "block_order": [
-        "collection_NDEiqq",
         "collection_EnghPE",
+        "collection_NDEiqq",
         "collection_wwMYrf"
       ],
       "name": "Tab collections",
