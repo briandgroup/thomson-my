@@ -15,8 +15,8 @@
         "image_N6w6bU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/myjune_roadshow_website.jpg",
-            "mobile_image": "shopify://shop_images/myjune_roadshow_website.jpg",
+            "image": "shopify://shop_images/Artboard_3_copy_13_4a04b849-723e-4dcd-a776-2ee410298a72.jpg",
+            "mobile_image": "shopify://shop_images/Artboard_3_copy_13_4a04b849-723e-4dcd-a776-2ee410298a72.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -45,8 +45,8 @@
         "image_nfUXV4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/banner_d481ca56-b627.jpg",
-            "mobile_image": "shopify://shop_images/banner_d481ca56-b627.jpg",
+            "image": "shopify://shop_images/Artboard_3_copy_14-3_9d2c0ebd-087f-41e9-a56c-4593ce20d630.jpg",
+            "mobile_image": "shopify://shop_images/Artboard_3_copy_14-3_9d2c0ebd-087f-41e9-a56c-4593ce20d630.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -75,8 +75,8 @@
         "image_MmU7hA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Web_banner_d481ca56-b627-4e5f-ac1b-130bfc424969.png",
-            "mobile_image": "shopify://shop_images/Web_banner_d481ca56-b627-4e5f-ac1b-130bfc424969.png",
+            "image": "shopify://shop_images/Artboard_3_copy_14_2964a237-dbad-4d0e-94af-d3174fd9856c.jpg",
+            "mobile_image": "shopify://shop_images/Artboard_3_copy_14_2964a237-dbad-4d0e-94af-d3174fd9856c.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -105,8 +105,8 @@
         "image_U6wGAj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Artboard_1.png",
-            "mobile_image": "shopify://shop_images/Artboard_1.png",
+            "image": "shopify://shop_images/Artboard_3_copy_14-1.jpg",
+            "mobile_image": "shopify://shop_images/Artboard_3_copy_14-1.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -240,6 +240,7 @@
     },
     "subcollections": {
       "type": "subcollections",
+      "disabled": true,
       "settings": {
         "subcollection_layout": "slider",
         "subcollection_description": false,
