@@ -24537,7 +24537,7 @@ body.has-header-sticky .timeline {
   }
 }
 
-body.collection-products .tabs > li span {
+body#products.template-collection .tabs > li span {
   font-size: 30px;
   padding: 0 0 5px;
   background: linear-gradient(to right, currentColor, currentColor);
@@ -24548,20 +24548,20 @@ body.collection-products .tabs > li span {
 }
 
 /* Hover underline effect */
-body.collection-products .tabs > li span:hover {
+body#products.template-collection .tabs > li span:hover {
   background-size: 100% 1px;
 }
 
-/* Keep underline on active tab */
-body.collection-products .tabs > li.active span,
-body.collection-products .tabs > li.current span,
-body.collection-products .tabs > li.is-selected span {
+/* Show underline on active/selected tab */
+body#products.template-collection .tabs > li.active span,
+body#products.template-collection .tabs > li.current span,
+body#products.template-collection .tabs > li.is-selected span {
   background-size: 100% 1px;
 }
 
-/* Mobile font size */
+/* Mobile size adjustment */
 @media screen and (max-width: 767px) {
-  body.collection-products .tabs > li span {
-    font-size: 16px;
+  body#products.template-collection .tabs > li span {
+    font-size: 18px;
   }
 }
