@@ -24493,7 +24493,7 @@ body.has-header-sticky .timeline {
 /*! ============ Add any custom styles below this line ================== */
 
 .tabs>li span {
-    font-size: 27px;
+    font-size: 22px;
     padding: 0 0 5px;
     background: linear-gradient(to right,currentColor,currentColor);
     background-size: 0% 1px;
@@ -24506,8 +24506,4 @@ body.has-header-sticky .timeline {
   .tabs > li span {
     font-size: 16px; /* You can adjust this value */
   }
-}
-
-body[class*="thomson-calmilax"] ul.tabs {
-  font-size: 10px !important;
 }
