@@ -24508,6 +24508,8 @@ body.has-header-sticky .timeline {
   }
 }
 
-body.product-thomson-calmilax .product-tabs ul.tabs {
-  font-size: 10px !important;
+body[class*="thomson-calmilax"] .product-tabs ul.tabs {
+  font-size: 50px !important;
+  color: red !important;
+  background: yellow !important;
 }
