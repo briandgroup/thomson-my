@@ -24536,3 +24536,32 @@ body.has-header-sticky .timeline {
     font-size: 16px;
   }
 }
+
+body.collection-products .tabs > li span {
+  font-size: 30px;
+  padding: 0 0 5px;
+  background: linear-gradient(to right, currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 50% 86%;
+  background-repeat: no-repeat;
+  transition: color 0.25s ease-in, background-size 0.25s ease-in;
+}
+
+/* Hover underline effect */
+body.collection-products .tabs > li span:hover {
+  background-size: 100% 1px;
+}
+
+/* Keep underline on active tab */
+body.collection-products .tabs > li.active span,
+body.collection-products .tabs > li.current span,
+body.collection-products .tabs > li.is-selected span {
+  background-size: 100% 1px;
+}
+
+/* Mobile font size */
+@media screen and (max-width: 767px) {
+  body.collection-products .tabs > li span {
+    font-size: 16px;
+  }
+}
