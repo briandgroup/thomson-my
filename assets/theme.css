@@ -24492,18 +24492,19 @@ body.has-header-sticky .timeline {
 
 /*! ============ Add any custom styles below this line ================== */
 
-.tabs>li span {
-    font-size: 30px;
-    padding: 0 0 5px;
-    background: linear-gradient(to right,currentColor,currentColor);
-    background-size: 0% 1px;
-    background-position: 50% 86%;
-    background-repeat: no-repeat;
-    transition: color .25s ease-in,background-size .25s ease-in;
+.template-index .tabs > li span {
+  font-size: 30px;
+  padding: 0 0 5px;
+  background: linear-gradient(to right, currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 50% 86%;
+  background-repeat: no-repeat;
+  transition: color .25s ease-in, background-size .25s ease-in;
 }
 
+/* Mobile: homepage only */
 @media screen and (max-width: 767px) {
-  .tabs > li span {
-    font-size: 16px; /* You can adjust this value */
+  .template-index .tabs > li span {
+    font-size: 16px;
   }
 }
