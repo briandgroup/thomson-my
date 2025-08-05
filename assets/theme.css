@@ -24507,3 +24507,7 @@ body.has-header-sticky .timeline {
     font-size: 16px; /* You can adjust this value */
   }
 }
+
+.template-index .product-tabs ul.tabs {
+  font-size: 30px !important;
+}
