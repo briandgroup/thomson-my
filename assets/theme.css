@@ -24499,16 +24499,23 @@ body.has-header-sticky .timeline {
   background-size: 0% 1px;
   background-position: 50% 86%;
   background-repeat: no-repeat;
-  transition: color .25s ease-in, background-size .25s ease-in;
+  transition: color 0.3s ease-in, background-size 0.4s ease;
 }
 
-/* Mobile: homepage only */
+/* Show underline on hover */
+.template-index .tabs > li span:hover {
+  background-size: 100% 1px;
+}
+
+/* Show underline on active/selected tab */
+.template-index .tabs > li.active span,
+.template-index .tabs > li.is-selected span {
+  background-size: 100% 1px;
+}
+
+/* Mobile view font adjustment */
 @media screen and (max-width: 767px) {
   .template-index .tabs > li span {
     font-size: 16px;
   }
-}
-
-.template-index .tabs > li span:hover {
-  background-size: 100% 1px;
 }
