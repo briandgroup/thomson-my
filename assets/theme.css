@@ -24507,3 +24507,13 @@ body.has-header-sticky .timeline {
     font-size: 16px; /* You can adjust this value */
   }
 }
+
+.tabs>li span {
+    font-size: 18px;
+    padding: 0 0 5px;
+    background: linear-gradient(to right,currentColor,currentColor);
+    background-size: 0% 1px;
+    background-position: 50% 86%;
+    background-repeat: no-repeat;
+    transition: color .25s ease-in,background-size .25s ease-in;
+}
