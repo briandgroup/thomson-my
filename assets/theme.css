@@ -24493,7 +24493,7 @@ body.has-header-sticky .timeline {
 /*! ============ Add any custom styles below this line ================== */
 
 .tabs>li span {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 0 5px;
     background: linear-gradient(to right,currentColor,currentColor);
     background-size: 0% 1px;
