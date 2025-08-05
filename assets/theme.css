@@ -24508,6 +24508,6 @@ body.has-header-sticky .timeline {
   }
 }
 
-body[class*="products"] .tabs > li span {
-  font-size: 8px;
+body[class*="products"] .product-tabs ul.tabs {
+    font-size: 10px;
 }
