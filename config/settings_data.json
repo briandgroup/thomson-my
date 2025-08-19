@@ -380,7 +380,12 @@
       ".product__price {font-size: 25px;}",
       ".index-product.section-padding {background-position: 20% 100%;}",
       "chatbase-bubble-window {display: none;}",
-      "#AddToCart--template--17349509185587__main {background: black;}"
+      "#AddToCart--template--16682714955827__main {background: black;}",
+      "}#AddToCart--template--17349509185587__main {background: black;}",
+      "}#AddToCart--template--17319220478003__main {background: black;}",
+      "}#AddToCart--template--17349584781363__main {background: black;}",
+      "}#AddToCart--template--17319132397619__main {background: black;}",
+      "}#AddToCart--template--17319077838899__main {background: black;}"
     ]
   }
 }
