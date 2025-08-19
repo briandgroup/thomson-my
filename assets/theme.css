@@ -24551,20 +24551,3 @@ body#products.template-collection .tabs > li.is-selected span {
     font-size: 18px;
   }
 }
-
-body.product-combo-for-performance-comfort .product-form button[type="submit"],
-body.product-combo-for-performance-comfort .product__submit__add .btn {
-  background: linear-gradient(90deg, #4cb8a9 0%, #379d8b 100%) !important;
-  color: #fff !important;
-  font-weight: 600 !important;
-  border: none !important;
-  border-radius: 50px !important;
-  width: 100% !important;
-  height: 48px !important;
-  transition: all 0.3s ease;
-}
-
-body.product-combo-for-performance-comfort .product-form button[type="submit"]:hover {
-  background: linear-gradient(90deg, #379d8b 0%, #2e8777 100%) !important;
-  transform: translateY(-1px);
-}
