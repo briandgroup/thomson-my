@@ -370,7 +370,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".product__photo {opacity: 0; background-color: transparent;}",
+      "yousaid: .product__photo {opacity: 0; background-color: transparent;}",
       ".product__content {padding-top: 20px; padding-right: 20px; padding-bottom: 0px; height: fit-content; background-color: rgba(255, 255, 255, 0.7); border-radius: 10px; border: solid 1.5px #ebb240;}",
       ".breadcrumbs {display: none;}",
       ".brick__block {border-radius: 15px;}",
@@ -380,9 +380,7 @@
       ".product__price {font-size: 25px;}",
       ".index-product.section-padding {background-position: 20% 100%;}",
       "chatbase-bubble-window {display: none;}",
-      "#AddToCart--template--17319077838899__main {background: black;}",
-      "body.product-combo-for-performance-comfort #AddToCart--template--17319077838899__main {background-color: #ebb240; /* same yellow as Calmilax */ border-radius: 30px; /* rounded pill shape */ color: #fff; /* text white */ font-size: 16px; font-weight: 600; padding: 12px 25px; transition: all 0.3s ease; /* smooth hover */}",
-      "/* Hover effect *"
+      "#AddToCart--template--16682714955827__main {background: black;}"
     ]
   }
 }
