@@ -382,7 +382,7 @@
       "chatbase-bubble-window {display: none;}",
       "#AddToCart--template--17319077838899__main {background: black;}",
       "body.product-combo-for-performance-comfort #AddToCart--template--17319077838899__main {background-color: #ebb240; /* same yellow as Calmilax */ border-radius: 30px; /* rounded pill shape */ color: #fff; /* text white */ font-size: 16px; font-weight: 600; padding: 12px 25px; transition: all 0.3s ease; /* smooth hover */}",
-      "/* Hover effect */body.product-combo-for-performance-comfort #AddToCart--template--17319077838899__main:hover {background-color: #000; /* black on hover */ color: #ebb240; /* text changes to yellow */ transform: scale(1.05); /* slightly bigger */}"
+      "/* Hover effect *"
     ]
   }
 }
