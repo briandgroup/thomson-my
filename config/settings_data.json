@@ -370,7 +370,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "yousaid: .product__photo {opacity: 0; background-color: transparent;}",
+      ".product__photo {opacity: 0; background-color: transparent;}",
       ".product__content {padding-top: 20px; padding-right: 20px; padding-bottom: 0px; height: fit-content; background-color: rgba(255, 255, 255, 0.7); border-radius: 10px; border: solid 1.5px #ebb240;}",
       ".breadcrumbs {display: none;}",
       ".brick__block {border-radius: 15px;}",
