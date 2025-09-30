@@ -52,7 +52,7 @@
           "type": "text",
           "settings": {
             "column_width": 90,
-            "title": "SEPTEMBER 2025",
+            "title": "OCTOBER 2025",
             "heading_size": 7,
             "text": "",
             "text_size": 4,
@@ -113,10 +113,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/2025_ROADSHOW_-_Sep_2025.jpg",
+        "image_1": "shopify://shop_images/2025_ROADSHOW_OCT_2025_d3853205-a064-4004-9b4e-ba41b1fea20d.jpg",
         "link": "",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/2025_ROADSHOW_-_Sep_2025.jpg",
+        "mobile_image": "shopify://shop_images/2025_ROADSHOW_OCT_2025_d3853205-a064-4004-9b4e-ba41b1fea20d.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
