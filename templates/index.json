@@ -45,8 +45,8 @@
         "image_pQChiA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Artboard_3_copy_14_2964a237-dbad-4d0e-94af-d3174fd9856c.jpg",
-            "mobile_image": "shopify://shop_images/Artboard_3_copy_14_2964a237-dbad-4d0e-94af-d3174fd9856c.jpg",
+            "image": "shopify://shop_images/Artboard_1_copy_2.png",
+            "mobile_image": "shopify://shop_images/Artboard_1_copy_2.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
