@@ -55,15 +55,6 @@
             "padding_bottom": 30
           }
         },
-        "text_yetUyf": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text": "<p><em>*If you would like to send gifts to more than two people, please do not hesitate to contact us. We will be happy to assist you.</em></p>",
-            "layout": "left",
-            "padding_bottom": 16
-          }
-        },
         "pickup": {
           "type": "pickup",
           "disabled": true,
@@ -143,7 +134,6 @@
         "price",
         "variants",
         "buttons",
-        "text_yetUyf",
         "pickup",
         "tabs",
         "divider_1",
